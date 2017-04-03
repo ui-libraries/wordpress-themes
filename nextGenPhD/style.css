@@ -1,0 +1,31 @@
+/*
+  Theme Name: NextGenPhD
+  Description: Next Gen PhD Child Theme
+  Author: Ethan DeGross
+  Template: twentysixteen
+  Version: 1.0.0
+  License: GNU General Public License v2 or later
+  Text Domain: twentysixteen
+*/
+body, button, input, select, textarea{
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+#page{
+  margin:0px 0px;
+}
+.site-branding .site-title a{
+  color:#00a4b9;
+}
+
+.site-description{
+  font-size:1.25rem;
+  color: #fcd63f;
+}
+
+h2.entry-title, h1.entry-title{
+  font-size: 1.75rem;
+}
+
+body:not(.custom-background-image):before, body:not(.custom-background-image):after{
+display:none;
+}

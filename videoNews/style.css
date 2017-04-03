@@ -1,0 +1,13 @@
+/*
+ Theme Name:   videoNews
+ Description:  Child theme for Media Literacy Project
+ Author:       Ethan DeGross
+ Template:     mh_newsdesk
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  videoNews
+*/
+
+a.bc-home, .search-form{
+  display:none;
+}

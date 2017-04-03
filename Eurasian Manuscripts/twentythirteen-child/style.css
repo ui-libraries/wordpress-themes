@@ -1,0 +1,174 @@
+/*
+ Theme Name:   Twenty Thirteen Child for Eurasianmss
+ Description:  Twenty Thirteen Child Theme
+ Author:       Ethan DeGross
+ Template:     twentythirteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  twenty-thirteen-child
+*/
+hr {
+  clear:both;
+}
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption {
+    color: #220e10;
+    font-size: 14px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 0 24px;
+    line-height: 110%;
+    padding-top: 5px;
+    position: relative;
+    top: -20px;
+}
+/*Hide unwanted divs*/
+.site-info, .page-id-70 .entry-title{
+display:none;
+}
+/*Header customization to accomodate image*/
+
+.site-header .search-form{
+  display: none;
+}
+ td {
+   padding-left: 10px;
+ }
+ td p{
+   margin-bottom: 0px;
+ }
+.hentry{
+  padding: 0px 0px;
+}
+.navbar{
+  text-align: center;
+  margin-top: 20px;
+
+}
+/*Navbar customization to better incorporate into header image
+.navbar{
+  background-color: transparent;
+  text-align: center;
+}
+#navbar a{
+  color:white;
+  font-size: 20px;
+}
+#navbar a:hover{
+  background-color:transparent;
+  color:black;
+}
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus{
+  background-color: transparent;
+  opacity: .75;
+}
+*/
+/*Minimzed the link area because it was interfering with the navbar, About links to home anyways*/
+.site-header .home-link{
+  max-width: 1px;
+}
+/*At the moment Mobile styling is aimed at header/navbar customization and accessiblity*/
+@media only screen and (max-width: 380px) {
+  #masthead{
+    height:auto;
+  }
+    .site-header{
+    background-size: contain !important;
+  }
+  .main-navigation{
+    max-width: 200px;
+    z-index: 1;
+    margin-top: 40px;
+  }
+  .menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active{
+    color: black;
+  }
+  #navbar a{
+    color:black;
+  }
+  .nav-menu li a{
+    padding: 6px 20px;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+  #masthead{
+    height:auto;
+  }
+  .site-header{
+    background-size: contain !important;
+  }
+  .main-navigation{
+    max-width: 200px;
+    z-index: 1;
+    margin-top: 45px;
+  }
+  .menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active{
+    color: white;
+  }
+  #navbar a{
+    color:black;
+  }
+  .nav-menu li a{
+    padding: 6px 20px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 643px) {
+  #masthead{
+    height:auto;
+  }
+  .site-header{
+    background-size: contain !important;
+  }
+  .main-navigation{
+    max-width: 200px;
+    z-index: 1;
+      }
+  .menu-toggle, .menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active{
+    color: white;
+  }
+  #navbar{
+    margin-top: 50px;
+  }
+  #navbar a{
+    color:black;
+  }
+  .nav-menu li a{
+    padding: 6px 20px;
+  }
+}
+@media only screen and (min-width: 644px) and (max-width: 819px) {
+  #masthead{
+    height:auto;
+  }
+  .site-header .home-link{
+    min-height: 130px;
+  }
+  .site-header{
+    background-size: contain !important;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 980px) {
+  #masthead{
+    height:auto;
+  }
+  .site-header .home-link{
+    min-height: 150px;
+  }
+  .site-header{
+    background-size: contain !important;
+  }
+}
+@media only screen and (min-width: 981px) and (max-width: 1350px) {
+
+.site-header{
+  background-size: contain !important;
+}
+@media only screen and (min-width: 1351px) and (max-width: 1600px) {
+
+.site-header{
+  background-size: contain !important;
+}
+}
+
+@media only screen and (min-width: 1351px) and (max-width: 2399px) {}
+@media only screen and (min-width: 2400px)and (max-width: 5000px) {}

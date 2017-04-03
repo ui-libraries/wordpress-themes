@@ -1,0 +1,1854 @@
+/*
+  Theme Name: IDEAL-responsive-child
+  Description: responsive Child Theme for IDEAL
+  Author: Ethan DeGross
+  Template: responsive
+  Version: 1.0.0
+  License: GNU General Public License v2 or later
+  Text Domain: responsive
+*/
+
+/*This project is broken up into sections:
+header css - PHP found in header.php
+Splash page video css
+Body css and "Section Headers" css
+Sections 1-7 css
+footer(section 8) css - php found in footer.php
+Media Queries
+Misc Browswer
+*/
+.error404 #header{
+  display:none;
+}
+/*header customization*/
+#header img{
+  width: 50%;
+}
+#header {
+  position:fixed;
+  background-color: transparent;
+  z-index: 2;
+  width:100%;
+}
+.page-id-16 #header, .page-id-8 #header, .page-id-327 #header{
+  background-color: black!important;
+}
+
+/* delete eventually
+#wrapper{
+  margin-top: 125px;
+}
+*/
+#logo{
+  padding-left: 50px;
+  margin-top: 15px;
+}
+/* delete eventually
+
+.site-name{
+  font-family: fantasy;
+  font-size: 5.5em;
+}
+.site-name a{
+  color:white;
+}
+.site-name a:hover{
+  color:black;
+}
+*/
+.skip-container{
+  padding: 0 0;
+}
+/*Menu Customizations*/
+.main-nav, .menu, .menu ul{
+float:right;
+background-color: transparent;
+font-family : "roboto",
+              Georgia,
+              Serif;
+background-image: none;
+filter:opacity(1);
+clear:none;
+margin: 20px 40px 20px 0px;
+text-transform: uppercase;
+}
+.menu a{
+color:white;
+text-shadow: none;
+border-left:none;
+}
+ul.menu > li:hover, .menu a:hover{
+  background-color: transparent;
+  filter:opacity(1);
+  background-image: none;
+  border-bottom: 4px solid white;
+}
+.menu .current_page_item a, .menu .current-menu-item a{
+  background-color: transparent;
+  filter:opacity(1);
+  background-image: none;
+  color:white;
+
+}
+.sub-menu{
+  margin-top: 0px!important;
+}
+
+
+/*Splash Page Video Customizations*/
+.fluid-width-video-wrapper iframe{
+  width:100%;
+  height:43%!important;
+}
+#embed-wrapper{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.owl-carousel.owl-loaded{
+/*add filters here*/
+}
+.owl-carousel .owl-video-tn{
+  background-size: cover;
+  height:800px;
+}
+.item-video{
+  height:800px;
+}
+
+#landing-page-arrowDown{
+      content: "";
+      padding: 1.25em;
+      display: block;
+      left: 0px;
+      position: absolute;
+      top: 53em;
+      width: 35px;
+      margin-left:46%;
+      z-index: 100;
+}
+
+/*Hide unwanted divs*/
+#footer, .entry-title, .owl-controls, .breadcrumb-list, .person-title{
+display:none;
+}
+/*Homepage customizations*/
+#wrapper, #content-full, .post-edit{
+  padding:0px;
+  margin:0px;
+}
+.owl-carousel .owl-stage-outer {
+  top:-90px;
+  height:1200px;
+  z-index: 1
+}
+.owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000;
+}
+.item-video{
+  height:300px;
+}
+
+/*Body Customizations*/
+html, body{
+  overflow-x: hidden;
+}
+p, ul, li{
+  font-size: 22px;
+  line-height: 140%;
+  color: black;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+}
+a {
+  color:#ec008c;
+}
+a:hover{
+  color:black;
+}
+#container{
+  max-width:100%;
+  padding: 0 0;
+}
+#post-4, #page-title{
+  text-align: center;
+}
+#content-wrapper{
+margin: 0px 9%;
+}
+/*Seo Friendly way to hide titles*/
+.seo-friendly{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+/*anchor tag offset needed to accomodate for fixed header*/
+.ideal-anchor-offset{
+  display: block;
+  position: relative;
+  top: -132px;
+  visibility: hidden;
+}
+.ideal-anchor-offset-2{
+  display: block;
+  position: relative;
+  top: -40px;
+  visibility: hidden;
+}
+/*Page specific customizations - sub pages*/
+/*page id 16 is the events page, and page id 8 is the projects page, 327 is people page*/
+.page-id-8, .page-id-16{
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+}
+.page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top:200px;
+  margin-bottom: 200px;
+}
+/*People page*/
+.page-id-327 #content-full{
+  top:200px;
+  color:black;
+  position: relative;
+  margin-left: 10%;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+}
+.page-id-327 .person-title{
+  display: block;
+}
+.page-id-327 p.person-title{
+  font-size: 16px;
+}
+
+.people-header{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+.page-id-327 h1{
+  display: none;
+}
+.page-id-327 #content-full{
+  margin-bottom: 350px;
+}
+/*Body Customizations
+.page-id-4 #wrapper{
+z-index: 0;
+height:500px;
+background-color: gray;
+margin: 0 0;
+padding: 0 0;
+}
+*/
+/*First Section
+width:338px;
+height: 56px;
+padding-top: 50px;
+padding-left: 20px;
+*/
+
+/*Section Heading customizations*/
+.section-headings{
+  background-size: cover;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight:700;
+  text-align: center;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+}
+#first-section-heading{
+background-image: url(/ideal/wp-content/uploads/sites/33/2016/11/IDEAL_Website_v1HWB_BlackBar01.png);
+color: white;
+width:14%;
+padding:2%;
+height: 19px;
+}
+
+#second-section-heading{
+  background-image: url(/ideal/wp-content/uploads/sites/33/2016/11/IDEAL_Website_v1HWB_WhiteBar02.png);
+  padding:2%;
+  color: black;
+  height: 58px;
+  width: 80%;
+  margin-top: 100px;
+}
+#second-section-heading span{
+  position: relative;
+  display: block;
+  margin-top: 20px;
+}
+#fourth-section-heading{
+  background-image: url(  /ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_BlackBAR_02.png);
+  color: white;
+  padding:2%;
+  width:35%;
+  height: 27px;
+}
+#fifth-section-heading{
+  background-image: url(/ideal/wp-content/uploads/sites/33/2016/11/IDEAL_Website_v1HWB_BlackBar02.png);
+  color: white;
+  padding:2%;
+  width:50%;
+  height: 27px;
+}
+
+
+
+/*sections*/
+#first-section{
+  margin-bottom: 200px;
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+}
+#first-section-text{
+margin: 0 25%;
+font-size: 16px;
+}
+/*#second-section{
+  height:auto;
+}
+#first-row-projects{
+  margin: 0 0;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#second-row-projects{
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects{
+  height:300px;
+  float: left;
+  flex: 1 0 300px;
+}
+#p1{
+  background-color: black;
+}
+#p2{
+  background-color: yellow;
+}
+#p3{
+  background-color: blue;
+}
+#p4{
+  background-color: green;
+}
+#p5{
+  background-color: teal;
+}
+#p6{
+  background-color: purple;
+}
+#p7{
+  background-color: red;
+}
+#p8{
+  background-color: pink;
+}*/
+
+
+/*New Second Section for Projects - old code commented out above*/
+.project-image{
+  filter: opacity(20%);
+  max-height: 265px;
+}
+
+#projects-section{
+  width:100%;
+  height:auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.project-info{
+  height: 100px;
+  position: relative;
+  top:-200px;
+  width:100%;
+  font-size: 2em;
+  font-weight:700;
+  text-align: center;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+}
+.project-name{
+  line-height: 105%;
+  word-wrap: inherit;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+.ideal-project a{
+  color:white;
+}
+.ideal-project a:hover, .ideal-project p:hover{
+
+}
+.short-description p{
+  color:white;
+}
+.ideal-project-wrapper{
+  width:25%;
+  flex: 1 0 400px;
+  position: relative;
+}
+.ideal-project-wrapper:nth-child(1) {
+  background-color: #000000;
+}
+.ideal-project-wrapper:nth-child(2) {
+  background-color: #0097dc;
+}
+.ideal-project-wrapper:nth-child(3) {
+  background-color: #ec008c;
+}
+.ideal-project-wrapper:nth-child(4) {
+  background-color: #fff200;
+}
+.ideal-project-wrapper:nth-child(5) {
+  background-color: #ed202e;
+}
+.ideal-project-wrapper:nth-child(6) {
+  background-color: #93278f;
+}
+.ideal-project-wrapper:nth-child(7) {
+  background-color: #00a657;
+}
+.ideal-project-wrapper:nth-child(8) {
+  background-color: #f26524;
+}
+
+/*Third Section Equipment Checkout*/
+#third-section{
+height:1600px;
+display: flex;
+flex-wrap: wrap;
+color: black;
+}
+#third-section #left-ts{
+  width:40%;
+  padding:10%;
+  flex-grow:3;
+}
+#third-section #left-ts span, #seven-and-a-half-section span{
+  font-family: 'Lobster', cursive;
+}
+#third-section #right-ts{
+  width:15%;
+  margin-right: 16%;
+  margin-top: 10%;
+  flex-grow:1;
+}
+#third-section #right-ts img{
+  padding: 2%;
+  background-size: contain;
+}
+#third-section #right-ts div{
+  margin-bottom: 20px;
+}
+#first-image-ts{
+  height:300px;
+  width:300px;
+  border-radius: 50%;
+  background-position: 60% 60%;
+  background-image:url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Camera.png');
+  background-repeat: no-repeat;
+}
+#first-image-ts:hover{
+  background-image: url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Camera_Click.png');
+  background-position: 60% 35%;
+}
+#second-image-ts{
+  height:300px;
+  width:300px;
+  border-radius: 50%;
+  background-position: 60% 60%;  background-image:url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Microphone.png');
+  background-repeat: no-repeat;
+}
+#second-image-ts:hover{
+  background-image: url('/ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_Microphone_Click.png');
+  background-position: 60% 35%;
+
+}
+#third-image-ts{
+  height:300px;
+  width:300px;
+  border-radius: 50%;
+  background-position: 60% 60%;  background-image:url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Tripod.png');
+  background-repeat: no-repeat;
+}
+#third-image-ts:hover{
+  background-image: url('/ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_Tripod_Click.png');
+  background-position: 60% 35%;
+
+}
+#large-media-header{
+  font-size: 9em;
+  line-height: 115%;
+  color:black;
+  font-weight: 700;
+}
+#large-media-header a{
+  color: black;
+  font-weight: 700;
+}
+.rollover-color{
+  color:#ec008c;
+}
+/*Fourth Section Student Works*/
+#fourth-section{
+  background-color: white;
+  height:2100px;
+  color: black;
+}
+#fourth-section a {
+  color: #ec008c;
+}
+#fourth-section a:hover{
+  color: black;
+}
+#studentwork-section{
+      width: 100%;
+      height: auto;
+      margin-top:25px;
+      margin-left:25px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+#left-fs{
+  width:53%;
+  margin-top: 150px;
+  margin-left: 150px;
+  float: left;
+}
+#right-fs{
+  width:30%;
+  display: inline-block;
+  float: right;
+}
+#right-fs img{
+  width:100%;
+  position: relative;
+  float: right;
+}
+.slider-item{
+  width: 250px;
+  margin: 25px 25px;
+}
+.slide-image{
+  width:250px;
+  height:250px;
+}
+#additional-works-image{
+  margin: 25px 25px;
+  height:250px;
+  width:250px;
+  background-image: url('/ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_More_09.png');
+}
+#additional-works-image:hover{
+  background-image: url('/ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_More_Click.png');
+}
+.student-work{
+  float: left;
+  height:200px;
+  margin:2.5%;
+}
+#third-row-student-work{
+  margin: 100px 100px;
+  width:100%;
+  float: left;
+  color:black;
+}
+#third-row-student-work p{
+  color: black;
+}
+h3.slide-title{
+  font-size: 1.5em;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 120%;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+
+}
+/* Likely delete soon
+#sw1{
+  background-image: url('http://s-lib018.lib.uiowa.edu/ethan_ideal/wp-content/uploads/sites/33/2016/12/idealStudentWork1.png');
+  color:black;
+  width: 170px;
+  height: 170px;
+  font-size: 20px;
+  padding: 15px;
+  -webkit-filter: grayscale(100%);
+}
+*/
+
+#fifth-section{
+  height:1200px;
+  color: black;
+}
+#fifth-section-heading a{
+  color: white;
+  font-weight: 700;
+}
+#fifth-section-heading a:hover{
+  color:#fff200;
+}
+#collaborators{
+  margin: 100px 5%;
+}
+#collaborators, #people-collaborator-section, #people-instructor-section{
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+#collaborators .studio-person, #people .studio-person{
+  width: 400px;
+  text-align: center;
+  font-family: "roboto",
+ Georgia,
+ Serif;
+  text-transform: uppercase;
+}
+#first-row-collaborators{
+  margin-top: 100px;
+  text-align: center;
+}
+#second-row-collaborators{
+  text-align: center;
+}
+.collaborators{
+  margin:1%;
+}
+
+#sixth-section{
+  height:1500px;
+  color: black;
+  padding: 10%;
+  background-image: url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Background.png');
+}
+#large-testimonial-header{
+  font-family: 'Lobster', cursive;
+  font-size: 9em;
+  line-height: 150%;
+}
+#first-row-testimonials{
+  margin-bottom: 100px;
+  width:100%;
+  height:400px;
+}
+#first-row-testimonials-text{
+  float: left;
+  width:50%;
+}
+#first-row-testimonials h4, #second-row-testimonials h4{
+  font-size: 2em;
+}
+#first-row-testimonials img{
+  float: right;
+}
+#testimonial-first-row-bubble{
+  margin-bottom:60px;
+}
+#second-row-testimonials-text{
+float:right;
+width:50%;
+}
+#second-row-testimonials img{
+  float:left;
+}
+#seven-and-a-half-section{
+  margin-top: 150px;
+}
+#seventh-section{
+  height: 400px;
+  padding:5% 0 0% 25%;
+  display: inline-flex;
+  float: left;
+  word-break: normal;
+}
+#contact-text{
+  height:300px;
+  margin-left:30px;
+}
+.contact-heading{
+  font-size: 6em;
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  color:black;
+}
+#seventh-section span{
+  font-size: 5em;
+  text-transform: uppercase;
+  color: black;
+  float: left;
+}
+#mail-image{
+height:250px;
+width:250px;
+border-radius: 50%;
+background-position: 60% 60%;
+background-image: url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Mail_04.png');
+background-repeat: no-repeat;
+}
+#mail-image:hover{
+background-image: url('/ideal/wp-content/uploads/sites/33/2016/12/IDEAL_Website_Mail_05.png');
+background-position: 60% 35%;
+}
+#work-with-us{
+  display: inline-block;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+#staff{
+  margin-left: 26%;
+}
+#staff .studio-person{
+  width: 300px;
+  text-align: center;
+  float: left;
+  font-family : "roboto",
+                Georgia,
+                Serif;
+  text-transform: uppercase;
+}
+#staff .person-email{
+  display: none;
+}
+#eighth-section{
+  background-color: black;
+  height:300px;
+}
+#lib-logo{
+  margin-left: 10%;
+  margin-top: 5%;
+  float: left;
+}
+#ideal-logo{
+  margin-right: 10%;
+  margin-top: 3%;
+  float: right;
+}
+
+@media only screen and (max-width: 320px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+  }
+  #logo{
+    width: 27%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+    margin-top: 5px;
+  }
+  #content-full{
+    top:50px;
+    position: relative;
+  }
+  .page-id-8 #content-full, .page-id-16 #content-full{
+    top:-120px;
+    position: relative;
+  }
+  .page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 200px;
+  }
+
+  .js .main-nav{
+    background-color: black;
+    background-image: none;
+  }
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }
+  .js .main-nav a#responsive_menu_button{
+    left:80%;
+  }
+  .section-headings{
+    font-size: 1.05em;
+  }
+  #first-section-heading{
+    width:53%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+  }
+  #fourth-section-heading{
+    width:77%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 85%;
+    height:17px;
+  }
+  /*beginning of section specific css*/
+  #first-section{
+    margin-bottom: 100px;
+  }
+  #first-section-text{
+    margin: 0 11%;
+  }
+  .ideal-project-wrapper{
+    flex: 1 0 225px;
+  }
+  .project-image{
+    max-height: 180px;
+  }
+  .project-info{
+    top:-100px;
+  }
+  .project-name{
+    font-size:1.25em;
+  }
+  #third-section{
+    height:2150px;
+  }
+  #third-section #left-ts{
+    padding: 100px 10% 10% 10%;
+  }
+  #large-media-header, .contact-heading {
+    font-size: 3.5em;
+  }
+  #fourth-section{
+    height:4600px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  #studentwork-section{
+    margin-left: 25px;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 50px;
+  }
+  .slider-item{
+    margin:15px 0px;
+  }
+  #third-row-student-work{
+    margin: 0;
+  }
+  #fifth-section{
+    height: 3300px;
+  }
+  #collaborators{
+    margin: 50px 5%;
+  }
+  #sixth-section{
+    height:3000px;
+  }
+  #large-testimonial-header{
+    font-size: 4em;
+  }
+  #first-row-testimonials-text, #second-row-testimonials-text{
+    width: 100%;
+  }
+  #work-with-us, #staff{
+    margin: 0 10%;
+  }
+  #seven-and-a-half-section{
+    margin-top:100px;
+  }
+  #staff{
+    margin-left: 3%;
+  }
+  #seventh-section{
+    height: 280px;
+    padding: 0;
+  }
+  #seventh-section span{
+    font-size: 2em;
+  }
+  #contact-text{
+    margin-left: 10%;
+  }
+  #eighth-section{
+    height:300px;
+  }
+  #lib-logo{
+    width:75%;
+  }
+  #ideal-logo{
+    width:75%;
+    float: left;
+    margin-left: 10%;
+  }
+
+}
+@media only screen and (min-width: 321px) and (max-width: 380px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+
+  }
+  #logo{
+    width: 27%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+    margin-top: 5px;
+
+  }
+  #content-full{
+    top:50px;
+    position: relative;
+  }
+  .page-id-8 #content-full, .page-id-16 #content-full{
+    top:-120px;
+    position: relative;
+  }
+  .page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 200px;
+  }
+  .js .main-nav{
+    background-color: black;
+    background-image: none;
+  }
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }
+  .js .main-nav a#responsive_menu_button{
+    left:80%;
+  }
+  .section-headings{
+    font-size: 1.05em;
+  }
+  #first-section-heading, #fourth-section-heading{
+    width:53%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 85%;
+    height:17px;
+  }
+  /*beginning of section specific css*/
+  #first-section{
+    margin-bottom: 100px;
+  }
+  #first-section-text{
+    margin: 0 11%;
+  }
+  .ideal-project-wrapper{
+    flex: 1 0 225px;
+  }
+  .project-image{
+    max-height: 225px;
+  }
+  .project-name{
+    font-size:1.5em;
+  }
+  #third-section{
+    height:1950px;
+  }
+  #third-section #left-ts{
+    padding: 100px 10% 10% 10%;
+  }
+  #large-media-header, .contact-heading {
+    font-size: 4em;
+  }
+  #fourth-section{
+    height:4400px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  #studentwork-section{
+    margin-left: 50px;
+  }
+  #left-fs p, #left-fs h4{
+    margin-left: 50px;
+  }
+  .slider-item{
+    margin:15px 0px;
+  }
+  #third-row-student-work{
+    margin: 0;
+  }
+  #fifth-section{
+    height: 3300px;
+  }
+  #sixth-section{
+    height:2600px;
+  }
+  #large-testimonial-header{
+    font-size: 4em;
+  }
+  #first-row-testimonials-text, #second-row-testimonials-text{
+    width: 100%;
+  }
+  #work-with-us, #staff{
+    margin: 0 10%;
+  }
+  #seventh-section{
+    height: 280px;
+    padding: 0;
+  }
+  #seventh-section span{
+    font-size: 2em;
+  }
+  #contact-text{
+    margin-left: 20%;
+  }
+  #eighth-section{
+    height:300px;
+  }
+  #lib-logo{
+    width:75%;
+  }
+  #ideal-logo{
+    width:75%;
+    float: left;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 419px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+  }
+  #logo{
+    width: 23%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+    margin-top: 0px;
+
+  }
+  #content-full{
+    top:50px;
+    position: relative;
+  }
+  .page-id-8 #content-full, .page-id-16 #content-full{
+    top:-120px;
+    position: relative;
+  }
+  .page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 200px;
+  }
+  .js .main-nav{
+    background-color: black;
+    background-image: none;
+  }
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }
+  .js .main-nav a#responsive_menu_button{
+    left:80%;
+  }
+  .section-headings{
+    font-size: 1.05em;
+  }
+  #first-section-heading, #fourth-section-heading{
+    width:53%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 88%;
+    height:22px;
+  }
+  /*beginning of section specific css*/
+  #first-section{
+    margin-bottom: 0;
+  }
+  #first-section-text{
+    margin: 0 11%;
+  }
+  .ideal-project-wrapper{
+    flex: 1 0 250px;
+  }
+  #third-section{
+    height:1750px;
+  }
+  #large-media-header, .contact-heading {
+    font-size: 4em;
+  }
+  #fourth-section{
+    height:4450px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 0px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4{
+    margin-left: 15%;
+  }
+  #third-row-student-work{
+    margin: 0;
+  }
+  #fifth-section{
+    height: 3300px;
+  }
+  #sixth-section{
+    height:2500px;
+  }
+  #large-testimonial-header{
+    font-size: 4em;
+  }
+  #first-row-testimonials-text, #second-row-testimonials-text{
+    width: 100%;
+  }
+  #work-with-us{
+    margin: 15% 10%;
+  }
+  #staff{
+    margin: -10% 10%;
+  }
+  #seventh-section{
+    height: 280px;
+    padding: 0;
+  }
+  #seven-and-a-half-section{
+    margin-top: 50px;
+  }
+  #seventh-section span{
+    font-size: 2em;
+  }
+  #contact-text{
+    margin-left: 20%;
+  }
+  #eighth-section{
+    height:200px;
+  }
+  #lib-logo{
+    width:30%;
+  }
+  #ideal-logo{
+    width:40%;
+    float: left;
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 480px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+  }
+  #logo{
+    width: 23%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+    margin-top: 0px;
+
+  }
+  #content-full{
+    top:50px;
+    position: relative;
+  }
+  .page-id-8 #content-full, .page-id-16 #content-full{
+    top:-120px;
+    position: relative;
+  }
+  .page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 200px;
+  }
+  .js .main-nav{
+    background-color: black;
+    background-image: none;
+  }
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }
+  .js .main-nav a#responsive_menu_button{
+    left:80%;
+  }
+  .section-headings{
+    font-size: 1.05em;
+  }
+  #first-section-heading, #fourth-section-heading{
+    width:53%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 88%;
+    height:22px;
+  }
+  /*beginning of section specific css*/
+  #first-section{
+    margin-bottom: 0;
+  }
+  #first-section-text{
+    margin: 0 11%;
+  }
+  .ideal-project-wrapper{
+    flex: 1 0 250px;
+  }
+  #third-section{
+    height:1690px;
+  }
+  #large-media-header, .contact-heading {
+    font-size: 4em;
+  }
+  #fourth-section{
+    height:4350px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 0px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  #third-row-student-work{
+    margin: 0;
+  }
+  #fifth-section{
+    height: 3300px;
+  }
+  #sixth-section{
+    height:2250px;
+  }
+  #large-testimonial-header{
+    font-size: 4em;
+  }
+  #first-row-testimonials-text, #second-row-testimonials-text{
+    width: 100%;
+  }
+  #work-with-us{
+    margin: 15% 10%;
+  }
+  #staff{
+    margin: -10% 10%;
+  }
+  #seventh-section{
+    height: 280px;
+    padding: 0;
+  }
+  #seven-and-a-half-section{
+    margin-top: 50px;
+  }
+  #seventh-section span{
+    font-size: 2em;
+  }
+  #contact-text{
+    margin-left: 20%;
+  }
+  #eighth-section{
+    height:200px;
+  }
+  #lib-logo{
+    width:30%;
+  }
+  #ideal-logo{
+    width:40%;
+    float: left;
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 650px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+
+  }
+  #logo{
+    width: 16%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+    margin-top: 0px;
+  }
+  #content-full{
+    top:50px;
+    position: relative;
+  }
+  .page-id-8 #content-full, .page-id-16 #content-full{
+    top:-120px;
+    position: relative;
+  }
+  .page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 200px;
+  }
+  .js .main-nav{
+    background-color: black;
+    background-image: none;
+  }
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }
+  .js .main-nav a#responsive_menu_button{
+    left:80%;
+  }
+  .section-headings{
+    font-size: 1.05em;
+  }
+  #first-section-heading, #fourth-section-heading{
+    width:53%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 88%;
+    height:22px;
+  }
+  /*beginning of section specific css*/
+  #first-section{
+    margin-bottom: 0;
+  }
+  #first-section-text{
+    margin: 0 11%;
+  }
+  .ideal-project-wrapper{
+    flex: 1 0 300px;
+  }
+  .project-info{
+    height:0px;
+    font-size: 1em;
+  }
+  #third-section{
+    height:1600px;
+  }
+  #large-media-header, .contact-heading {
+    font-size: 4em;
+  }
+  #fourth-section{
+    height:4200px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  .slider-item{
+    width:210px;
+  }
+  .slide-image{
+    width:210px;
+    height:210px;
+  }
+  #additional-works-image{
+    margin: 45px 25px;
+  }
+  #third-row-student-work{
+    margin: 0;
+  }
+  #fifth-section{
+    height: 3300px;
+  }
+  #collaborators{
+    margin: 100px 14%;
+  }
+  #sixth-section{
+    height:525px;
+    background-image:none;
+  }
+  #large-testimonial-header{
+    font-size: 4em;
+  }
+  #first-row-testimonials-text, #second-row-testimonials-text{
+    width: 100%;
+  }
+  #work-with-us{
+    margin: 15% 10%;
+  }
+  #staff{
+    margin: -10% 22%;
+  }
+  #seventh-section{
+    height: 280px;
+    padding: 0;
+    width: 100%
+  }
+  #contact-text{
+    margin-left:28%;
+  }
+  #seven-and-a-half-section{
+    margin-top: 50px;
+  }
+  #seventh-section span{
+    font-size: 2em;
+  }
+
+  #eighth-section{
+    height:300px;
+  }
+  #lib-logo{
+    width:30%;
+    margin-top: 10%;
+  }
+  #ideal-logo{
+    width:40%;
+    float:right;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width: 651px)
+and (max-width: 950px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+
+  }
+  #logo{
+    width: 70%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+  }
+  #content-full{
+    top:300px;
+    position: relative;
+  }
+  .ideal-anchor-offset{
+    top:-260px;
+  }
+  .js .main-nav{
+    background-color: black;
+    width:50%;
+    background-image: none;
+  }
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }
+  .js .main-nav a#responsive_menu_button{
+    left:80%;
+  }
+  .section-headings{
+    font-size: 2.0em;
+  }
+  #first-section-heading{
+    width:34%;
+    padding:2% 3% 3% 3%;
+    height:13px;
+  }
+  #fourth-section-heading{
+    width:70%;
+    padding:2% 3% 3% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 88%;
+    height:22px;
+  }
+  /*beginning of section specific css*/
+  #first-section{
+    margin-bottom: 0;
+  }
+  #first-section-text{
+    margin: 0 11%;
+  }
+  .ideal-project-wrapper{
+    flex: 1 0 300px;
+  }
+  .project-info{
+    height:0px;
+    font-size: 1em;
+  }
+  #third-section{
+    height:1600px;
+  }
+  #large-media-header, .contact-heading {
+    font-size: 4em;
+  }
+  #fourth-section{
+    height:4000px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  .slider-item{
+    width:210px;
+  }
+  .slide-image{
+    width:210px;
+    height:210px;
+  }
+  #additional-works-image{
+    margin: 45px 25px;
+  }
+  #third-row-student-work{
+    margin: 0;
+  }
+  #fifth-section{
+    height: 3300px;
+  }
+  #collaborators{
+    margin: 100px 14%;
+  }
+  #collaborators .studio-person{
+    width: 500px;
+  }
+  #sixth-section{
+    height:525px;
+    background-image:none;
+  }
+  #large-testimonial-header{
+    font-size: 4em;
+  }
+  #first-row-testimonials-text, #second-row-testimonials-text{
+    width: 100%;
+  }
+  #work-with-us{
+    margin: 15% 10%;
+  }
+  #staff{
+    margin: -10% 22%;
+  }
+  #seventh-section{
+    height: 500px;
+    padding: 0;
+    width: 100%
+  }
+  #contact-text{
+    margin-left:28%;
+  }
+  #seven-and-a-half-section{
+    margin-top: 50px;
+  }
+  #seventh-section span{
+    font-size: 2em;
+  }
+
+  #eighth-section{
+    height:300px;
+  }
+  #lib-logo{
+    width:30%;
+    margin-top: 10%;
+  }
+  #ideal-logo{
+    width:40%;
+    float:right;
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 951px)
+and (max-width: 1099px) {
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+    display: none!important;
+  }
+  #header{
+    opacity: 1!important;
+    background-color: black;
+  }
+  .menu a{
+    font-size: 11px;
+  }
+  #content-full{
+    top:300px;
+    position: relative;
+  }
+  .section-headings{
+    font-size: 2.0em;
+  }
+  #first-section-heading{
+    width:33%;
+    padding:2% 3% 3% 3%;
+    height:13px;
+  }
+  #fourth-section-heading{
+    width:53%;
+    padding:2% 3% 3% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 88%;
+    padding:2% 3% 3% 3%;
+    background-image: url(  /ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_BlackBAR_02.png);
+    height:22px;
+  }
+  #fourth-section{
+    height:2800px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  #fifth-section{
+    height: 1800px;
+  }
+  #sixth-section{
+    height:1900px;
+  }
+  #seventh-section{
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 1100px)
+and (max-width: 1299px) {
+  #logo, #right-ts, #right-fs{
+    display: none!important;
+  }
+  #landing-page-arrowDown{
+    top:42em;
+  }
+  .owl-carousel .owl-stage-outer{
+    height:1100px;
+  }
+  .section-headings{
+    font-size: 2.0em;
+  }
+  #first-section-heading{
+    width:23%;
+    padding:3% 3% 4% 3%;
+    height:13px;
+  }
+  #fourth-section-heading{
+    width:53%;
+    padding:3% 3% 4% 3%;
+    height:13px;
+  }
+  #fifth-section-heading{
+    width: 58%;
+    height:20px;
+    background-image: url(  /ideal/wp-content/uploads/sites/33/2017/02/IDEAL_Website_BlackBAR_02.png);
+    padding:3%;
+  }
+  #fourth-section{
+    height:2800px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  #fifth-section{
+    height: 1800px;
+  }
+  #sixth-section{
+    height:1900px;
+  }
+  #seventh-section{
+    height: 700px;
+    padding: 5% 0 0% 10%;
+  }
+}
+@media only screen and (min-width: 1300px)
+and (max-width: 1601px) {
+  #right-ts, #right-fs{
+    display: none!important;
+  }
+  #landing-page-arrowDown{
+    top:42em;
+  }
+  .owl-carousel .owl-stage-outer{
+    height:1100px;
+  }
+  .section-headings{
+    font-size: 2.0em;
+  }
+  #first-section-heading{
+    width:33%;
+    padding:2% 0% 3% 2%;
+    height:1px;
+  }
+  #fourth-section-heading{
+    width:40%;
+    padding:2% 0% 3% 2%;
+    height:1px;
+  }
+  #fifth-section-heading{
+    width: 50%;
+    height:22px;
+  }
+  #third-section{
+    height:1300px;
+  }
+  #fourth-section{
+    height:2000px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  #fifth-section{
+    height: 1500px;
+  }
+  #sixth-section{
+    height:1700px;
+  }
+  #seventh-section{
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1602px)
+and (max-width: 1700px) {
+  #right-ts, #right-fs{
+    display: none!important;
+  }
+  #landing-page-arrowDown{
+    top:42em;
+  }
+  .owl-carousel .owl-stage-outer{
+    height:1100px;
+  }
+  .section-headings{
+    font-size: 2.0em;
+  }
+  #first-section-heading{
+    width:33%;
+    padding:2% 0% 3% 2%;
+    height:1px;
+  }
+  #fourth-section-heading{
+    width:40%;
+    padding:2% 0% 3% 2%;
+    height:1px;
+  }
+  #fifth-section-heading{
+    width: 50%;
+    height:22px;
+  }
+  #third-section{
+    height:1200px;
+  }
+  #fourth-section{
+    height:1900px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  #fifth-section{
+    height: 1000px;
+  }
+  #sixth-section{
+    height:1500px;
+  }
+  #seventh-section{
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1701px)
+and (max-width: 1865px) {
+  #landing-page-arrowDown{
+    top:48em;
+  }
+  .owl-carousel .owl-stage-outer{
+    height:1100px;
+  }
+}
+@media only screen and (min-width: 1866px)
+and (max-width: 1920px) {
+  #landing-page-arrowDown{
+    top:50em;
+  }
+  .owl-carousel .owl-stage-outer{
+    height:1100px;
+  }
+}
+@media only screen and (min-width: 1921px)
+and (max-width: 2559px) {
+  #landing-page-arrowDown{
+    top:55em;
+  }
+}
+
+@media only screen and (min-width: 2560px)
+and (max-width: 5000px) {
+  #landing-page-arrowDown{
+    top:70em;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+  .ideal-project-wrapper{
+    float: left;
+  }
+ .project-name{
+    background-color: #ec008c;
+  }
+}

@@ -1,0 +1,25 @@
+/*
+Theme Name: responsive
+Description: responsive Child Theme
+Author: Ethan DeGross
+Template: responsive
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: responsive
+*/
+
+/*This stylesheet is for ie specific css
+*/
+#first-section{
+  display: none;
+}
+.ideal-project-wrapper{
+  float: left;
+  height:400px;
+}
+.project-info{
+  top:0!important;
+}
+.project-image{
+  display: none;
+}
