@@ -23,10 +23,11 @@ Template Name:  Custom Full Width Page (no sidebar)
 get_header(); ?>
 
 <div id="content-full" class="grid col-940">
-	<a href="./#about"><img id="landing-page-arrowDown"src="./wp-content/uploads/sites/33/2017/03/whitearrow.png"></a>
+	<h1 class="videoText"><span>Work with Ideal</span></h1>
+	<a href="./#about"><img id="landing-page-arrowDown"src="https://dsps.lib.uiowa.edu/ideal/wp-content/uploads/sites/33/2017/03/whitearrow.png"></a>
 	<div class="owl-carousel featured-jumbotron">
 	 <div id="embed-wrapper">
-<iframe id="existing-workWithIdeal" width="100%" src="https://www.youtube.com/embed/pwx8RzYfTxs?controls=0&rel=0&autoplay=1&disablekb=1&loop=1&modestbranding=1&listType=playlist&list=pwx8RzyfTxs&disablekb=1&enablejsapi=1" frameborder="0" allowfullscreen>" frameborder="0" allowfullscreen></iframe>
+	<iframe id="existing-workWithIdeal" width="100%" src="https://www.youtube.com/embed/mUBm3cg116U?controls=0&rel=0&autoplay=1&disablekb=1&loop=1&modestbranding=1&disablekb=1&enablejsapi=1" frameborder="0" allowfullscreen>" frameborder="0" allowfullscreen></iframe>
 <div id="myVideo">
 </div>
 </div></div>
@@ -167,7 +168,7 @@ echo do_shortcode('[pods name="project" template="Projects list (standard)" wher
 <?php
 echo do_shortcode('[pods name="slide" template="Slide (standard)" where="slidesyndication.slug=\'homepage-studentwork\'"]');
  ?>
- <a href="http://ir.uiowa.edu/ideal/"><img id="additional-works-image"></a>
+ <a href="http://ir.uiowa.edu/ideal/"><div id="additional-works-image"></div></a>
 </div>
 	<h5 style="clear:both;float:left;"></h5>
 	<div id="third-row-student-work" class="row">
