@@ -27,7 +27,7 @@ Misc Browswer
 #header {
   position:fixed;
   background-color: transparent;
-  z-index: 2;
+  z-index: 200;
   width:100%;
 }
 .page-id-16 #header, .page-id-8 #header, .page-id-327 #header{
@@ -96,9 +96,23 @@ ul.menu > li:hover, .menu a:hover{
 
 
 /*Splash Page Video Customizations*/
+.videoText{
+  color: white;
+  position: relative;
+  top:300px;
+  z-index: 2;
+  font-family: lobster;
+  font-size: 9em;
+  text-align: center;
+  font-weight: 400;
+}/*V2 Update*/
+.videoText span{
+  border-bottom: 10px solid white;
+  padding-bottom: 25px;
+}/*V2 Update*/
 .fluid-width-video-wrapper iframe{
   width:100%;
-  height:43%!important;
+  height:50%!important;/*V2 Update*/
 }
 #embed-wrapper{
   position:absolute;
@@ -140,7 +154,7 @@ display:none;
   margin:0px;
 }
 .owl-carousel .owl-stage-outer {
-  top:-90px;
+  top:-500px;
   height:1200px;
   z-index: 1
 }
@@ -756,6 +770,9 @@ background-position: 60% 35%;
   margin-top: 3%;
   float: right;
 }
+.js .main-nav a#responsive_menu_button{
+  left:99.9%!important;
+}
 
 @media only screen and (max-width: 320px) {
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
@@ -790,6 +807,7 @@ background-position: 60% 35%;
   .js .main-nav{
     background-color: black;
     background-image: none;
+    font-size: 0px; /*sam*/
   }
   .js .main-nav #responsive_current_menu_item{
     width: 100px;
@@ -909,8 +927,9 @@ background-position: 60% 35%;
   }
 
 }
+
 @media only screen and (min-width: 321px) and (max-width: 380px) {
-  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
+  .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image, .videoText{
     display: none!important;
   }
   #header{
@@ -943,6 +962,7 @@ background-position: 60% 35%;
   .js .main-nav{
     background-color: black;
     background-image: none;
+    font-size: 0px; /*sam*/
   }
   .js .main-nav #responsive_current_menu_item{
     width: 100px;
@@ -1078,6 +1098,7 @@ background-position: 60% 35%;
   .js .main-nav{
     background-color: black;
     background-image: none;
+    font-size: 0px; /*sam*/
   }
   .js .main-nav #responsive_current_menu_item{
     width: 100px;
@@ -1170,6 +1191,7 @@ background-position: 60% 35%;
     margin-left: 10%;
   }
 }
+
 @media only screen and (min-width: 420px) and (max-width: 480px) {
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
@@ -1203,6 +1225,7 @@ background-position: 60% 35%;
   .js .main-nav{
     background-color: black;
     background-image: none;
+    font-size: 0px; /*sam*/
   }
   .js .main-nav #responsive_current_menu_item{
     width: 100px;
@@ -1295,6 +1318,7 @@ background-position: 60% 35%;
     margin-left: 10%;
   }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 650px) {
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
@@ -1303,6 +1327,12 @@ background-position: 60% 35%;
     opacity: 1!important;
     background-color: black;
 
+  }
+  .videoText{
+    top:0px;
+    display: block!important;
+    color:black;
+    font-size: 7em;
   }
   #logo{
     width: 16%;
@@ -1328,6 +1358,7 @@ background-position: 60% 35%;
   .js .main-nav{
     background-color: black;
     background-image: none;
+    font-size: 0px; /*sam*/
   }
   .js .main-nav #responsive_current_menu_item{
     width: 100px;
@@ -1442,22 +1473,34 @@ background-position: 60% 35%;
   }
 }
 
-@media only screen and (min-width: 651px)
-and (max-width: 950px) {
+@media only screen and (min-width: 651px) and (max-width: 950px) {
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
   #header{
     opacity: 1!important;
     background-color: black;
-
+    height: 30px;/*sam*/
+  }
+  .videoText{
+    top:-150px;
+    display: block!important;
+    color:black;
+    font-size: 7em;
+  }
+  .menu /*sam*/{
+   display: none;
+   width: 100%;
+   top: 30px;
+   z-index: 1000;
   }
   #logo{
-    width: 70%;
+    width: 11%;
     display: block;
     position: absolute;
     float: left;
     clear:both;
+    margin-top: 5px;
   }
   #content-full{
     top:300px;
@@ -1468,7 +1511,7 @@ and (max-width: 950px) {
   }
   .js .main-nav{
     background-color: black;
-    width:50%;
+    width:20%; /*sam*/
     background-image: none;
   }
   .js .main-nav #responsive_current_menu_item{
@@ -1591,8 +1634,8 @@ and (max-width: 950px) {
     margin-left: 10%;
   }
 }
-@media only screen and (min-width: 951px)
-and (max-width: 1099px) {
+
+@media only screen and (min-width: 951px) and (max-width: 1099px) {
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
@@ -1600,6 +1643,29 @@ and (max-width: 1099px) {
     opacity: 1!important;
     background-color: black;
   }
+  .videoText{
+    top:-150px;
+    display: block!important;
+    color:black;
+    font-size: 7em;
+  }
+  #logo{
+    width: 11%;
+    display: block;
+    position: absolute;
+    float: left;
+    clear:both;
+    margin-top: 5px;
+
+  }
+  .js .main-nav{
+    background-color: black;
+    width:20%; /*sam*/
+    background-image: none;
+  }/*sam*/
+  .js .main-nav #responsive_current_menu_item{
+    width: 100px;
+  }/*sam*/
   .menu a{
     font-size: 11px;
   }
@@ -1647,16 +1713,24 @@ and (max-width: 1099px) {
     height: 700px;
   }
 }
-@media only screen and (min-width: 1100px)
-and (max-width: 1299px) {
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
   #logo, #right-ts, #right-fs{
     display: none!important;
   }
+  .videoText{
+    top:100px;
+    font-size: 7em;
+  }/*V2 Update*/
   #landing-page-arrowDown{
-    top:42em;
+    top:25em;/*V2 Update*/
+  }
+  .owl-carousel.owl-loaded{
+    height: 450px;/*V2 Update*/
   }
   .owl-carousel .owl-stage-outer{
-    height:1100px;
+    height:700px;/*V2 Update*/
+    top:-375px;/*V2 Update*/
   }
   .section-headings{
     font-size: 2.0em;
@@ -1699,16 +1773,24 @@ and (max-width: 1299px) {
     padding: 5% 0 0% 10%;
   }
 }
-@media only screen and (min-width: 1300px)
-and (max-width: 1601px) {
-  #right-ts, #right-fs{
+
+@media only screen and (min-width: 1300px) and (max-width: 1429px) {
+  #logo, #right-ts, #right-fs{
     display: none!important;
   }
+  .videoText{
+    top:200px;
+    font-size: 7em;
+  }/*V2 Update*/
   #landing-page-arrowDown{
-    top:42em;
+    top:30em;/*V2 Update*/
+  }
+  .owl-carousel.owl-loaded{
+    height: 650px;/*V2 Update*/
   }
   .owl-carousel .owl-stage-outer{
-    height:1100px;
+    height:830px;/*V2 Update*/
+    top:-375px;/*V2 Update*/
   }
   .section-headings{
     font-size: 2.0em;
@@ -1751,16 +1833,84 @@ and (max-width: 1601px) {
     height: 400px;
   }
 }
-@media only screen and (min-width: 1602px)
-and (max-width: 1700px) {
+
+@media only screen and (min-width: 1430px) and (max-width: 1601px) {
   #right-ts, #right-fs{
     display: none!important;
   }
+  .videoText{
+    top:250px;
+    font-size: 7em;
+  }/*V2 Update*/
   #landing-page-arrowDown{
-    top:42em;
+    top:34em;/*V2 Update*/
+  }
+  .owl-carousel.owl-loaded{
+    height: 650px;/*V2 Update*/
   }
   .owl-carousel .owl-stage-outer{
-    height:1100px;
+    height:925px;/*V2 Update*/
+    top:-375px;/*V2 Update*/
+  }
+  .section-headings{
+    font-size: 2.0em;
+  }
+  #first-section-heading{
+    width:33%;
+    padding:2% 0% 3% 2%;
+    height:1px;
+  }
+  #fourth-section-heading{
+    width:40%;
+    padding:2% 0% 3% 2%;
+    height:1px;
+  }
+  #fifth-section-heading{
+    width: 50%;
+    height:22px;
+  }
+  #third-section{
+    height:1300px;
+  }
+  #fourth-section{
+    height:2000px;
+  }
+  #left-fs{
+    width:80%;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  #left-fs p, #left-fs h4, #left-fs ul{
+    margin-left: 15%;
+  }
+  #fifth-section{
+    height: 1500px;
+  }
+  #sixth-section{
+    height:1700px;
+  }
+  #seventh-section{
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1602px) and (max-width: 1700px) {
+  #right-ts, #right-fs{
+    display: none!important;
+  }
+  .videoText{
+    top:250px;
+    font-size: 7em;
+  }/*V2 Update*/
+  #landing-page-arrowDown{
+    top:34em;/*V2 Update*/
+  }
+  .owl-carousel.owl-loaded{
+    height: 650px;/*V2 Update*/
+  }
+  .owl-carousel .owl-stage-outer{
+    height:925px;/*V2 Update*/
+    top:-375px;/*V2 Update*/
   }
   .section-headings{
     font-size: 2.0em;
@@ -1803,37 +1953,53 @@ and (max-width: 1700px) {
     height: 400px;
   }
 }
-@media only screen and (min-width: 1701px)
-and (max-width: 1865px) {
+
+@media only screen and (min-width: 1701px) and (max-width: 1865px) {
+  .videoText{
+    top:250px;
+    font-size: 7em;
+  }/*V2 Update*/
   #landing-page-arrowDown{
-    top:48em;
+    top:34em;/*V2 Update*/
+  }
+  .owl-carousel.owl-loaded{
+    height: 650px;/*V2 Update*/
   }
   .owl-carousel .owl-stage-outer{
-    height:1100px;
+    height:925px;/*V2 Update*/
+    top:-375px;/*V2 Update*/
   }
 }
-@media only screen and (min-width: 1866px)
-and (max-width: 1920px) {
+
+@media only screen and (min-width: 1866px) and (max-width: 1920px) {
+  .videoText{
+    top:250px;
+    font-size: 7em;
+  }/*V2 Update*/
   #landing-page-arrowDown{
-    top:50em;
+    top:34em;/*V2 Update*/
+  }
+  .owl-carousel.owl-loaded{
+    height: 650px;/*V2 Update*/
   }
   .owl-carousel .owl-stage-outer{
-    height:1100px;
+    height:925px;/*V2 Update*/
+    top:-375px;/*V2 Update*/
   }
 }
-@media only screen and (min-width: 1921px)
-and (max-width: 2559px) {
+
+@media only screen and (min-width: 1921px) and (max-width: 2559px) {
   #landing-page-arrowDown{
     top:55em;
   }
 }
 
-@media only screen and (min-width: 2560px)
-and (max-width: 5000px) {
+@media only screen and (min-width: 2560px) and (max-width: 5000px) {
   #landing-page-arrowDown{
     top:70em;
   }
 }
+
 
 @media only screen
 and (min-device-width : 768px)
@@ -1852,3 +2018,216 @@ and (-webkit-min-device-pixel-ratio: 2) {
     background-color: #ec008c;
   }
 }
+
+/*Sam's rules for creating custom mobile menu below 1100px, from responsive.css*/
+@media screen and (max-width: 980px) {
+	.js .main-nav .menu {
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 30px;
+		z-index: 1000;
+	}/*sam*/
+
+	.js .main-nav .menu ul {
+		margin-top: 1px;
+	}/*sam*/
+
+	.js .main-nav .menu li {
+		float: none;
+		background-color: #ffffff;
+		border: none;
+	}/*sam*/
+
+	.js .main-nav .menu li a {
+		color: #444444;
+		font-size: 13px;
+		font-weight: normal;
+		height: 45px;
+		line-height: 45px;
+		padding: 0 15px;
+		border: none;
+		border-bottom: 1px solid #f5f5f5;
+		text-shadow: none;
+		text-align: left;
+		cursor: pointer;
+	}/*sam*/
+
+	.js .main-nav .menu li.current_page_item,
+	.js .menu .current_page_item a,
+	.js .menu .current-menu-item a {
+		background-color: #f5f5f5;
+	}/*sam*/
+
+	.js .main-nav .menu li li:hover {
+		background: none !important;
+	}/*sam*/
+
+	.js .main-nav .menu li li a {
+		position: relative;
+		padding: 0 10px 0 30px;
+	}/*sam*/
+
+	.js .main-nav .menu li li li a {
+		position: relative;
+		padding: 0 10px 0 40px;
+	}/*sam*/
+
+	.js .main-nav .menu li a:hover,
+	.js .main-nav .menu li li a:hover {
+		background-image: none;
+		filter: none;
+		background-color: #f5f5f5 !important;
+	}/*sam*/
+
+	.js .main-nav .menu li li a::before {
+		content: '\2013';
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}/*sam*/
+
+	.js .main-nav .menu li li li a::before {
+		content: '\2013';
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}/*sam*/
+
+	.js .main-nav .menu li li li a::after {
+		content: '\2013';
+		position: absolute;
+		top: 0;
+		left: 30px;
+	}/*sam*/
+
+	.js .main-nav .menu li ul {
+		position: static;
+		visibility: visible;
+		background-color: #ffffff;
+	}/*sam*/
+
+	.js .main-nav .menu ul {
+		min-width: 0;
+	}/*sam*/
+
+	.js .main-nav a#responsive_menu_button {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 100%;
+		height: 30px;
+		width: 23px;
+		margin-left: -30px;
+		background: url('https://dsps.lib.uiowa.edu/ideal/wp-content/uploads/sites/33/2017/04/select-icons.png') 0 5px no-repeat;
+		cursor: pointer;
+	}/*sam*/
+
+}
+
+@media screen and (max-width: 1099px) {
+    .videoText{
+      display: none;
+    }
+    .js .main-nav .menu {
+  		display: none;
+  		position: absolute;
+  		width: 100%;
+  		top: 30px;
+  		z-index: 1000;
+  	}/*sam*/
+
+  	.js .main-nav .menu ul {
+  		margin-top: 1px;
+  	}/*sam*/
+
+  	.js .main-nav .menu li {
+  		float: none;
+  		background-color: #ffffff;
+  		border: none;
+  	}/*sam*/
+
+  	.js .main-nav .menu li a {
+  		color: #444444;
+  		font-size: 13px;
+  		font-weight: normal;
+  		height: 45px;
+  		line-height: 45px;
+  		padding: 0 15px;
+  		border: none;
+  		border-bottom: 1px solid #f5f5f5;
+  		text-shadow: none;
+  		text-align: left;
+  		cursor: pointer;
+  	}/*sam*/
+
+  	.js .main-nav .menu li.current_page_item,
+  	.js .menu .current_page_item a,
+  	.js .menu .current-menu-item a {
+  		background-color: #f5f5f5;
+  	}/*sam*/
+
+  	.js .main-nav .menu li li:hover {
+  		background: none !important;
+  	}/*sam*/
+
+  	.js .main-nav .menu li li a {
+  		position: relative;
+  		padding: 0 10px 0 30px;
+  	}/*sam*/
+
+  	.js .main-nav .menu li li li a {
+  		position: relative;
+  		padding: 0 10px 0 40px;
+  	}/*sam*/
+
+  	.js .main-nav .menu li a:hover,
+  	.js .main-nav .menu li li a:hover {
+  		background-image: none;
+  		filter: none;
+  		background-color: #f5f5f5 !important;
+  	}/*sam*/
+
+  	.js .main-nav .menu li li a::before {
+  		content: '\2013';
+  		position: absolute;
+  		top: 0;
+  		left: 20px;
+  	}/*sam*/
+
+  	.js .main-nav .menu li li li a::before {
+  		content: '\2013';
+  		position: absolute;
+  		top: 0;
+  		left: 20px;
+  	}/*sam*/
+
+  	.js .main-nav .menu li li li a::after {
+  		content: '\2013';
+  		position: absolute;
+  		top: 0;
+  		left: 30px;
+  	}/*sam*/
+
+  	.js .main-nav .menu li ul {
+  		position: static;
+  		visibility: visible;
+  		background-color: #ffffff;
+  	}/*sam*/
+
+  	.js .main-nav .menu ul {
+  		min-width: 0;
+  	}/*sam*/
+
+  	.js .main-nav a#responsive_menu_button {
+  		position: absolute;
+  		display: block;
+  		top: 0;
+  		left: 100%;
+  		height: 30px;
+  		width: 23px;
+  		margin-left: -30px;
+  		background: url('https://dsps.lib.uiowa.edu/ideal/wp-content/uploads/sites/33/2017/04/select-icons.png') 0 5px no-repeat;
+  		cursor: pointer;
+  	}/*sam*/
+  }
