@@ -2,8 +2,8 @@
 
 /*---------------------------------------------------------------------------------
 
-	Theme Name: Hitchcock
-    Text Domain: hitchcock
+	Theme Name: WOAH Hitchcock child
+    Text Domain: woah-hitchcock-child
     Version: 1.06
 	Author: Anders Norén
 	Author URI: http://www.andersnoren.se
@@ -138,18 +138,27 @@ img {
 /*	2.	Structure
 /* -------------------------------------------------------------------------------- */
 
-
+/*butler*/
 .section-inner {
-	width: 1040px;
-	max-width: 90%;
+	width: 100%;
+	max-width: 100%;
+	padding: 0px;
 	margin: 0 auto;
+
+	
 }
 
 .content {
+	width: 100%;
 	position: relative;
 	z-index: 2;
-}
 
+}
+/*butler
+.section-inner table {
+	overflow-x:auto;
+}
+*/
 
 /* Transitions --------------------------------------- */
 
@@ -667,8 +676,13 @@ input[type="button"],
 /*	6. Single Post
 /* -------------------------------------------------------------------------------- */
 
+/*butler*/
+.post-container { background: white; margin-left: 0px; margin-right: 0px; width: 100%; }
 
-.post-container { background: #fff; }
+#gform_1 {
+	width: 100%;
+	position: relative;
+}
 
 
 /* Featured Media  ----------------------------------------- */
@@ -688,7 +702,7 @@ input[type="button"],
 .post-header { 
 	width: 90%;
 	margin: 0 auto;
-	padding: 80px 0;
+	padding: 15px 0;
 }
 
 .post-date {
@@ -710,12 +724,12 @@ input[type="button"],
 
 /* Post Inner  ----------------------------------------- */
 
-
+/*butler */
 .post-inner {
-	width: 520px;
-	max-width: 85%;
-	margin: 0 auto;
-	padding: 80px 0 90px;
+	width: 100%;
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px 0 5px;
 }
 
 .post-header + .post-inner { padding-top: 0; }
@@ -935,10 +949,11 @@ input[type="button"],
 /*	7. Post Content
 /* -------------------------------------------------------------------------------- */
 
-
+/*butler*/
 .post-content { 
 	font-family: 'Droid Serif', Georgia, serif; 
 	color: #333;
+	margin: 20px;
 	position: relative;
 }
 
@@ -1206,6 +1221,7 @@ code, kbd, pre {
     overflow: hidden;
 	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-size: 0.85em;
+
 }
 
 .post-content th,
@@ -1213,7 +1229,22 @@ code, kbd, pre {
 	padding: 2.5%;
 	margin: 0;
 	overflow: visible;
-	line-height: 140%;
+	line-height: 140%;	
+  	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
 
 .post-content caption {
@@ -2085,6 +2116,7 @@ img#wpstats { display: none; }
 	
 	.post-title { font-size: 2em; }
 	
+	/*butler */
 	.post-inner { padding: 40px 0 50px; }
 	
 	/* Related Posts */
@@ -2248,4 +2280,80 @@ img#wpstats { display: none; }
 	}
 
 		
+}
+
+
+
+
+/*butler */
+
+@media only screen and (max-width: 1280px) {
+	
+	/* Force table to not be like tables anymore */
+	#entry-table table, 
+	#entry-table thead, 
+	#entry-table tbody, 
+	#entry-table th, 
+	#entry-table td, 
+	#entry-table tr { 
+		display: block; 
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#entry-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#entry-table tr { border: 1px solid #ccc; }
+ 
+	#entry-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+		
+
+	}
+
+	#entry-table th { 
+		/* Behave  like a "row" */
+		width: 50%;
+		
+
+	}
+ 
+	#entry-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 1px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+		line-height: 1;
+		
+	}
+ 
+	/*
+	Label the data
+	*/
+	#entry-table td:before { content: attr(data-title); }
+}
+
+/*butler*/
+.entryrow th {
+	width: 3%;
+}
+
+#woahmap {
+	width: 100%;
+	height: 600px;
 }
