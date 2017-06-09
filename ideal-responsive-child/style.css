@@ -17,6 +17,50 @@ footer(section 8) css - php found in footer.php
 Media Queries
 Misc Browswer
 */
+
+/*Site Updates V3 6/7/2017
+
+#work-with-us p{
+color:white;
+padding: 50px 0px 50px 30px;
+}
+#large-media-header{
+font-weight:light;
+color:white;
+}
+#seven-and-a-half-section{ several media queries to change
+margin-top:0px;
+padding-top:150px;
+background-color:black;
+color:white;
+height:800px;
+}
+h2 .contact-heading{
+margin-top: .25em;
+}
+
+"Delete Class of section heading"
+#first-section-heading{ several media queries to change
+font-size: 7em;
+float:left;
+font-weight:bold;
+margin:11%;
+}
+Delete "click tiles"
+Change Latham Science background to a more readable background color
+For getting everything aligned on the left
+-delete
+#studentwork-section margin-left first two media queries to change(maybe)
+-add
+#third-row-student-work{
+margin:100px 0 100px 0;
+}
+
+.owl-carousel.owl-loaded{
+height:900px;
+}
+*/
+
 .error404 #header{
   display:none;
 }
@@ -30,7 +74,7 @@ Misc Browswer
   z-index: 200;
   width:100%;
 }
-.page-id-16 #header, .page-id-8 #header, .page-id-327 #header{
+.page-id-16 #header, .page-id-8 #header, .page-id-327 #header, .page-id-289 #header{
   background-color: black!important;
 }
 
@@ -110,7 +154,7 @@ ul.menu > li:hover, .menu a:hover{
   border-bottom: 10px solid white;
   padding-bottom: 25px;
 }/*V2 Update*/
-.fluid-width-video-wrapper iframe{
+.page-id-4 .fluid-width-video-wrapper iframe{
   width:100%;
   height:50%!important;/*V2 Update*/
 }
@@ -215,8 +259,8 @@ margin: 0px 9%;
   visibility: hidden;
 }
 /*Page specific customizations - sub pages*/
-/*page id 16 is the events page, and page id 8 is the projects page, 327 is people page*/
-.page-id-8, .page-id-16{
+/*page id 16 is the events page, and page id 8 is the projects page, 327 is people page, 289 is Delmar Project Page*/
+.page-id-8, .page-id-16, .page-id-289{
   font-size: 18px;
   line-height: 140%;
   color: black;
@@ -224,7 +268,7 @@ margin: 0px 9%;
                 Georgia,
                 Serif;
 }
-.page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry{
+.page-id-8 #wrapper .post-entry, .page-id-16 #wrapper .post-entry, .page-id-289 #wrapper .post-entry{
   margin-left: 25%;
   margin-right: 25%;
   margin-top:200px;
@@ -286,11 +330,10 @@ padding-left: 20px;
                 Serif;
 }
 #first-section-heading{
-background-image: url(/ideal/wp-content/uploads/sites/33/2016/11/IDEAL_Website_v1HWB_BlackBar01.png);
-color: white;
-width:14%;
-padding:2%;
-height: 19px;
+  font-size: 7em;
+  float:left;
+  font-weight:bold;
+  margin:11%;
 }
 
 #second-section-heading{
@@ -334,7 +377,7 @@ height: 19px;
                 Serif;
 }
 #first-section-text{
-margin: 0 25%;
+margin: 0 10% 0 45%;
 font-size: 16px;
 }
 /*#second-section{
@@ -462,7 +505,7 @@ color: black;
 }
 #third-section #left-ts{
   width:40%;
-  padding:10%;
+  padding:7%;
   flex-grow:3;
 }
 #third-section #left-ts span, #seven-and-a-half-section span{
@@ -527,6 +570,16 @@ color: black;
   color: black;
   font-weight: 700;
 }
+#seven-and-a-half-section #large-media-header{
+  font-size: 9em;
+  line-height: 115%;
+  font-weight:light;
+  color:white;
+}
+#seven-and-a-half-section #large-media-header a{
+  font-weight:light;
+  color:white;
+}
 .rollover-color{
   color:#ec008c;
 }
@@ -560,7 +613,6 @@ color: black;
 }
 #right-fs{
   width:30%;
-  display: inline-block;
   float: right;
 }
 #right-fs img{
@@ -699,7 +751,11 @@ width:50%;
   float:left;
 }
 #seven-and-a-half-section{
-  margin-top: 150px;
+  margin-top:0px;
+  padding-top:150px;
+  background-color:black;
+  color:white;
+  height:900px;
 }
 #seventh-section{
   height: 400px;
@@ -717,6 +773,9 @@ width:50%;
   font-family: 'Lobster', cursive;
   font-weight: 500;
   color:black;
+}
+h2 .contact-heading{
+  margin-top: .25em;
 }
 #seventh-section span{
   font-size: 5em;
@@ -740,6 +799,10 @@ background-position: 60% 35%;
   display: inline-block;
   margin-left: 30%;
   margin-right: 30%;
+}
+#work-with-us p{
+color:white;
+padding: 50px 0px 50px 30px;
 }
 #staff{
   margin-left: 26%;
@@ -775,6 +838,10 @@ background-position: 60% 35%;
 }
 
 @media only screen and (max-width: 320px) {
+  #menu-main-nav{
+    right:25%;
+    width:225px;
+  }
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
@@ -819,10 +886,12 @@ background-position: 60% 35%;
     font-size: 1.05em;
   }
   #first-section-heading{
-    width:53%;
-    padding:1% 3% 4% 3%;
-    height:13px;
-  }
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+  font-size: 4em;
+  float: none;
+}
   #fourth-section-heading{
     width:77%;
     padding:1% 3% 4% 3%;
@@ -900,6 +969,7 @@ background-position: 60% 35%;
   }
   #seven-and-a-half-section{
     margin-top:100px;
+    height:1900px;
   }
   #staff{
     margin-left: 3%;
@@ -929,6 +999,10 @@ background-position: 60% 35%;
 }
 
 @media only screen and (min-width: 321px) and (max-width: 380px) {
+  #menu-main-nav{
+    right:-26%;
+    width:225px;
+  }
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image, .videoText{
     display: none!important;
   }
@@ -973,11 +1047,18 @@ background-position: 60% 35%;
   .section-headings{
     font-size: 1.05em;
   }
-  #first-section-heading, #fourth-section-heading{
-    width:53%;
-    padding:1% 3% 4% 3%;
-    height:13px;
-  }
+  #first-section-heading{
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+  font-size: 4em;
+  float: none;
+}
+  #fourth-section-heading{
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+}
   #fifth-section-heading{
     width: 85%;
     height:17px;
@@ -1031,7 +1112,7 @@ background-position: 60% 35%;
     height: 3300px;
   }
   #sixth-section{
-    height:2600px;
+    height:3000px;
   }
   #large-testimonial-header{
     font-size: 4em;
@@ -1049,6 +1130,9 @@ background-position: 60% 35%;
   #seventh-section span{
     font-size: 2em;
   }
+  #seven-and-a-half-section{
+  height:1900px;
+}
   #contact-text{
     margin-left: 20%;
   }
@@ -1066,6 +1150,10 @@ background-position: 60% 35%;
 }
 
 @media only screen and (min-width: 381px) and (max-width: 419px) {
+  #menu-main-nav{
+    right:-26%;
+    width:225px;
+  }
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
@@ -1109,11 +1197,18 @@ background-position: 60% 35%;
   .section-headings{
     font-size: 1.05em;
   }
-  #first-section-heading, #fourth-section-heading{
-    width:53%;
-    padding:1% 3% 4% 3%;
-    height:13px;
-  }
+  #first-section-heading{
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+  font-size: 4em;
+  float: none;
+}
+  #fourth-section-heading{
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+}
   #fifth-section-heading{
     width: 88%;
     height:22px;
@@ -1172,6 +1267,7 @@ background-position: 60% 35%;
   }
   #seven-and-a-half-section{
     margin-top: 50px;
+    height:1900px;
   }
   #seventh-section span{
     font-size: 2em;
@@ -1193,6 +1289,10 @@ background-position: 60% 35%;
 }
 
 @media only screen and (min-width: 420px) and (max-width: 480px) {
+  #menu-main-nav{
+    right:-26%;
+    width:225px;
+  }
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
@@ -1236,11 +1336,18 @@ background-position: 60% 35%;
   .section-headings{
     font-size: 1.05em;
   }
-  #first-section-heading, #fourth-section-heading{
-    width:53%;
-    padding:1% 3% 4% 3%;
-    height:13px;
-  }
+  #first-section-heading{
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+  font-size: 4em;
+  float: none;
+}
+  #fourth-section-heading{
+  width:53%;
+  padding:1% 3% 4% 3%;
+  height:13px;
+}
   #fifth-section-heading{
     width: 88%;
     height:22px;
@@ -1299,6 +1406,7 @@ background-position: 60% 35%;
   }
   #seven-and-a-half-section{
     margin-top: 50px;
+    height:1900px;
   }
   #seventh-section span{
     font-size: 2em;
@@ -1320,6 +1428,10 @@ background-position: 60% 35%;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 650px) {
+  #menu-main-nav{
+    right:-26%;
+    width:225px;
+  }
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
@@ -1369,7 +1481,14 @@ background-position: 60% 35%;
   .section-headings{
     font-size: 1.05em;
   }
-  #first-section-heading, #fourth-section-heading{
+    #first-section-heading{
+    width:53%;
+    padding:1% 3% 4% 3%;
+    height:13px;
+    font-size: 4em;
+    float: none;
+  }
+    #fourth-section-heading{
     width:53%;
     padding:1% 3% 4% 3%;
     height:13px;
@@ -1429,7 +1548,7 @@ background-position: 60% 35%;
     margin: 100px 14%;
   }
   #sixth-section{
-    height:525px;
+    height:2025px;
     background-image:none;
   }
   #large-testimonial-header{
@@ -1454,6 +1573,7 @@ background-position: 60% 35%;
   }
   #seven-and-a-half-section{
     margin-top: 50px;
+    height:1900px;
   }
   #seventh-section span{
     font-size: 2em;
@@ -1474,6 +1594,10 @@ background-position: 60% 35%;
 }
 
 @media only screen and (min-width: 651px) and (max-width: 950px) {
+  #menu-main-nav{
+    right:-4%;
+    width:225px;
+  }
   .owl-carousel, #landing-page-arrowDown, #right-ts, #right-fs, #sixth-section img, #mail-image{
     display: none!important;
   }
@@ -1527,6 +1651,8 @@ background-position: 60% 35%;
     width:34%;
     padding:2% 3% 3% 3%;
     height:13px;
+    font-size: 4em;
+    float: none;
   }
   #fourth-section-heading{
     width:70%;
@@ -1558,7 +1684,7 @@ background-position: 60% 35%;
     font-size: 4em;
   }
   #fourth-section{
-    height:4000px;
+    height:2800px;
   }
   #left-fs{
     width:80%;
@@ -1591,7 +1717,7 @@ background-position: 60% 35%;
     width: 500px;
   }
   #sixth-section{
-    height:525px;
+    height:1725px;
     background-image:none;
   }
   #large-testimonial-header{
@@ -1616,6 +1742,7 @@ background-position: 60% 35%;
   }
   #seven-and-a-half-section{
     margin-top: 50px;
+    height:1900px;
   }
   #seventh-section span{
     font-size: 2em;
@@ -1677,8 +1804,7 @@ background-position: 60% 35%;
     font-size: 2.0em;
   }
   #first-section-heading{
-    width:33%;
-    padding:2% 3% 3% 3%;
+    margin:10% 5% 10% 10%;
     height:13px;
   }
   #fourth-section-heading{
@@ -1712,6 +1838,13 @@ background-position: 60% 35%;
   #seventh-section{
     height: 700px;
   }
+  #seven-and-a-half-section{
+    height:1200px;
+  }
+  #work-with-us{
+    margin-left:15%;
+    margin-right: 15%;
+  }
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1299px) {
@@ -1736,8 +1869,7 @@ background-position: 60% 35%;
     font-size: 2.0em;
   }
   #first-section-heading{
-    width:23%;
-    padding:3% 3% 4% 3%;
+    margin:10% 5% 10% 10%;
     height:13px;
   }
   #fourth-section-heading{
@@ -1772,6 +1904,9 @@ background-position: 60% 35%;
     height: 700px;
     padding: 5% 0 0% 10%;
   }
+  #seven-and-a-half-section{
+    height:1000px;
+  }
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1429px) {
@@ -1796,8 +1931,7 @@ background-position: 60% 35%;
     font-size: 2.0em;
   }
   #first-section-heading{
-    width:33%;
-    padding:2% 0% 3% 2%;
+    margin:10% 5% 10% 10%;
     height:1px;
   }
   #fourth-section-heading{
@@ -1831,6 +1965,9 @@ background-position: 60% 35%;
   }
   #seventh-section{
     height: 400px;
+  }
+  #seven-and-a-half-section{
+    height:1000px;
   }
 }
 
@@ -1856,8 +1993,7 @@ background-position: 60% 35%;
     font-size: 2.0em;
   }
   #first-section-heading{
-    width:33%;
-    padding:2% 0% 3% 2%;
+    margin:10% 5% 10% 10%;
     height:1px;
   }
   #fourth-section-heading{
@@ -1892,6 +2028,9 @@ background-position: 60% 35%;
   #seventh-section{
     height: 400px;
   }
+  #seven-and-a-half-section{
+    height:1000px;
+  }
 }
 
 @media only screen and (min-width: 1602px) and (max-width: 1700px) {
@@ -1916,9 +2055,7 @@ background-position: 60% 35%;
     font-size: 2.0em;
   }
   #first-section-heading{
-    width:33%;
-    padding:2% 0% 3% 2%;
-    height:1px;
+    margin:10% 5% 10% 10%;
   }
   #fourth-section-heading{
     width:40%;
@@ -2020,112 +2157,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /*Sam's rules for creating custom mobile menu below 1100px, from responsive.css*/
-@media screen and (max-width: 980px) {
-	.js .main-nav .menu {
-		display: none;
-		position: absolute;
-		width: 100%;
-		top: 30px;
-		z-index: 1000;
-	}/*sam*/
 
-	.js .main-nav .menu ul {
-		margin-top: 1px;
-	}/*sam*/
-
-	.js .main-nav .menu li {
-		float: none;
-		background-color: #ffffff;
-		border: none;
-	}/*sam*/
-
-	.js .main-nav .menu li a {
-		color: #444444;
-		font-size: 13px;
-		font-weight: normal;
-		height: 45px;
-		line-height: 45px;
-		padding: 0 15px;
-		border: none;
-		border-bottom: 1px solid #f5f5f5;
-		text-shadow: none;
-		text-align: left;
-		cursor: pointer;
-	}/*sam*/
-
-	.js .main-nav .menu li.current_page_item,
-	.js .menu .current_page_item a,
-	.js .menu .current-menu-item a {
-		background-color: #f5f5f5;
-	}/*sam*/
-
-	.js .main-nav .menu li li:hover {
-		background: none !important;
-	}/*sam*/
-
-	.js .main-nav .menu li li a {
-		position: relative;
-		padding: 0 10px 0 30px;
-	}/*sam*/
-
-	.js .main-nav .menu li li li a {
-		position: relative;
-		padding: 0 10px 0 40px;
-	}/*sam*/
-
-	.js .main-nav .menu li a:hover,
-	.js .main-nav .menu li li a:hover {
-		background-image: none;
-		filter: none;
-		background-color: #f5f5f5 !important;
-	}/*sam*/
-
-	.js .main-nav .menu li li a::before {
-		content: '\2013';
-		position: absolute;
-		top: 0;
-		left: 20px;
-	}/*sam*/
-
-	.js .main-nav .menu li li li a::before {
-		content: '\2013';
-		position: absolute;
-		top: 0;
-		left: 20px;
-	}/*sam*/
-
-	.js .main-nav .menu li li li a::after {
-		content: '\2013';
-		position: absolute;
-		top: 0;
-		left: 30px;
-	}/*sam*/
-
-	.js .main-nav .menu li ul {
-		position: static;
-		visibility: visible;
-		background-color: #ffffff;
-	}/*sam*/
-
-	.js .main-nav .menu ul {
-		min-width: 0;
-	}/*sam*/
-
-	.js .main-nav a#responsive_menu_button {
-		position: absolute;
-		display: block;
-		top: 0;
-		left: 100%;
-		height: 30px;
-		width: 23px;
-		margin-left: -30px;
-		background: url('https://dsps.lib.uiowa.edu/ideal/wp-content/uploads/sites/33/2017/04/select-icons.png') 0 5px no-repeat;
-		cursor: pointer;
-	}/*sam*/
-
-}
 
 @media screen and (max-width: 1099px) {
+
     .videoText{
       display: none;
     }
