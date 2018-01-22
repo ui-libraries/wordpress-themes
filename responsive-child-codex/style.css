@@ -1,0 +1,191 @@
+/*
+ Theme Name:   Responsive Child for Codex Conquest
+ Description:  Responsive Child Theme
+ Author:       John Doe
+ Template:     responsive
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  responsive-child-codex
+*/
+
+
+.menu {
+display: none !important;
+}
+.top-menu li > a{
+font-size: 1.5em;
+}
+#responsive_current_menu_item {
+font-family: 'Josefin Sans', sans-serif;
+}
+/* .top-menu li {
+float: right;
+
+} */
+#menu-main, .menu li {
+font-family: 'Josefin Sans', sans-serif;
+/*width: 100%;
+background-color: black; */
+padding: 30px 20px;
+}
+#container{
+max-width: 100%;
+padding: 0px;
+}
+#logo {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+#logo img {
+max-width; 960px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#wrapper {
+border: none;
+/*margin-top: 0px;*/
+}
+.post-title, h1, h2, h3, h4, h5 , h6 {
+font-family: 'Josefin Sans', sans-serif;
+}
+.post-meta {
+  display: none;
+}
+#content-full, #content {
+font-family: 'EB Garamond', serif;
+margin-top: 0px;
+}
+.post-entry {
+font-size: 1.5em;
+line-height: initial;
+}
+.col-940 {
+width: 75%;
+margin-left: 13%;
+margin-right: auto;
+}
+
+.circular-image img {
+webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+}
+
+.gallery .gallery-item {
+  max-width: inherit;
+  padding-right: 5px;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 250px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 650px) {
+.top-menu {
+display: none;
+}
+}
+
+
+
+/*************************************HEIDI REDESIGN ***************************************/
+
+/*
+
+.menu {
+display: none !important;
+}
+.top-menu li > a{
+font-size: 1.5em;
+}
+#responsive_current_menu_item {
+font-family: 'Josefin Sans', sans-serif;
+}
+.top-menu li {
+float: right;
+
+}
+#menu-main, .menu li {
+font-family: 'Josefin Sans', sans-serif;
+/*width: 100%;
+background-color: black;
+padding: 30px 20px;
+}
+#container{
+max-width: 100%;
+padding: 0px;
+}
+#logo {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding-top: 4vw;
+padding-bottom: 4vw;
+}
+#logo img {
+max-width; 960px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#wrapper {
+border: none;
+}
+.post-title, h1, h2, h3, h4, h5 , h6 {
+font-family: 'Josefin Sans', sans-serif;
+}
+.post-meta {
+  display: none;
+}
+#content-full, #content {
+font-family: 'EB Garamond', serif;
+margin-top: 0px;
+}
+.post-entry {
+font-size: 1.5em;
+line-height: initial;
+}
+.col-940 {
+width: 75%;
+margin-left: 13%;
+margin-right: auto;
+}
+
+.circular-image img {
+webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+}
+
+.gallery .gallery-item {
+  max-width: inherit;
+  padding-right: 5px;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 250px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 650px) {
+.top-menu {
+display: none;
+}
+}
+
+/*
+
+/*
+Ethan- to be added to New site
+*/
