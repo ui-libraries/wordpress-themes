@@ -1,0 +1,208 @@
+/*
+ blue
+ #4b7888
+ 
+ red   
+ #7b2413
+
+ green   
+ #0f3034 
+*/
+
+.entry-title, .copyright{
+    display: none;
+}
+
+.page-id-8 h2{
+    font-size:3em;
+    text-align: center;
+    color:black;
+}
+#logo{
+    width: 40%; 
+    margin-right: 100px;
+}
+
+#header_section{
+    margin-top:90px;
+}
+
+.main-nav{
+    margin-top:0px;
+    font-size: 18px;
+}
+
+.menu a{
+    color: black;
+}
+
+.main-nav .menu li a, .main-nav .menu li a :active, .main-nav .menu li a:hover, .menu a:hover{
+    background-color: transparent;
+    background-image: none;
+    color: black;
+}
+
+.menu a:hover, .main-nav .menu li a:hover {
+    color: teal;
+}
+#container{
+    text-align: center; 
+    max-width: 1200px;
+}
+
+.page-id-8 #wrapper{
+    max-width: 800px;
+}
+#wrapper{
+    text-align: left;
+}
+
+#content{
+    width: 100%;
+}
+
+.custom-hr{
+    background-color:  #7b2413;
+    width: 100%;
+    height: 10px;
+    margin: 5px;
+}
+
+#footer_widget .widget_media_image{
+    float: right;
+}
+
+.widget-wrapper{
+    background-color: transparent;
+    border:none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 380px) {
+}
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+}
+
+@media only screen and (min-width: 701px)
+and (max-width: 819px) {
+
+}
+@media only screen and (min-width: 820px)
+and (max-width: 980px) {
+
+}
+
+@media only screen and (min-width: 981px)
+and (max-width: 1349px) {
+
+}
+
+@media only screen and (min-width: 1350px)
+and (max-width: 2399px) {
+
+}
+
+@media only screen and (min-width: 2400px)
+and (max-width: 5000px) {
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media all and (-ms-high-contrast: none),
+       (-ms-high-contrast: active) {
+    /*IE10+ CSS styles go here*/
+
+}  
+
+/* Data visualizations */
+
+	.plot {
+		float:left;
+		}
+
+	#vis {
+		width:100%;
+		clear:both;
+	}
+
+		
+	#vis h2 {margin-left:50px;}
+	
+	#vis button {
+		background-color:  #4b7888;
+		color:white;
+		border-radius: 5px;
+		border:none;
+		padding:10px;
+		font-weight:bold;
+		font-size:1.2em;
+		float:left;
+		width: 80px;
+		
+	}
+	
+	#currentValue {
+		display:box;
+		float:left;
+		padding:10px;
+		font-size:2em;
+		}
+		
+	#slider {
+		display:box;
+		float:left;
+		max-width:500px;
+	}
+		
+	#plots {
+		width:100%;
+		clear:both;
+		display:box;
+	}
+		
+	#controls {
+		clear:both;
+		}
+
+	.plot {margin-left:50px;}
+	
+	#legend {
+		list-style-type:none;
+		font-size:1em;
+		line-height:2em;
+		}
+		
+	#names {
+		width:100%;
+		clear:both !important;
+	}
+	
+	#legend li {
+		display:inline;
+		margin-right:1em;
+	}
+	
+	#names {
+		width:100%;
+		min-height:100px;
+		padding-top:1em;
+	}
+	
+	#names ul {
+		width:400px;
+		float:left;
+		display:block;
+		padding-left:2em;
+		}
+		
+
