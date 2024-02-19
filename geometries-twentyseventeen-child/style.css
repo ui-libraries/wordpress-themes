@@ -12,3 +12,8 @@
   width: 100%;
   float: none;
 }
+
+.panel-content .wrap {
+  padding-bottom: 4.5em;
+  padding-top: .5em;
+}
