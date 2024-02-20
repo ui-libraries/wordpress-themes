@@ -37,13 +37,38 @@ blue #22408c
   .page .panel-content .entry-title, .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title{
     color: #CE2028;
   }
+
+  .full-width-no-box .menu .current_page_item a, .full-width-no-box .menu .current-menu-item a {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  .full-width-no-box .menu .current_page_item a, .full-width-no-box .menu .current-menu-item a {
+    background-color: #FBD116;
+  }
  
   .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul{
     background-color: #FBD116;
     border:none;
   }
+
+  .full-width-no-box .menu a:hover {
+    background-color: #FBD116;
+    background-image: none;
+    color: black;
+  }
+  
   .main-navigation ul li.menu-item-has-children.focus:before, .main-navigation ul li.menu-item-has-children:hover:before, .main-navigation ul li.menu-item-has-children.focus:after, .main-navigation ul li.menu-item-has-children:hover:after, .main-navigation ul li.page_item_has_children.focus:before, .main-navigation ul li.page_item_has_children:hover:before, .main-navigation ul li.page_item_has_children.focus:after, .main-navigation ul li.page_item_has_children:hover:after{
     display: none;
+  }
+
+  .full-width-no-box .menu {
+    background-color: white;
+    background-image: none;
+  }
+
+  .full-width-no-box .main-nav {
+    background-color: white;
+    background-image: none;
   }
   
   #footer{
@@ -51,6 +76,18 @@ blue #22408c
     text-align:center;  
     padding-top: 40px;
   }
+
+  .social_div {
+    background-color: #FBD116;
+    padding: 2% 0;
+  }
+
+  .full-width-no-box #footer-wrapper .footer_div {
+    background-color: #FBD116;
+    padding: 2% 0;
+    margin-bottom: 10px;
+  }
+
   #studio-logo{
     width: 250px;
     text-align: center;
@@ -80,11 +117,20 @@ blue #22408c
     max-width: 755px;
     text-align: center!important;
   }
+
   .main-nav, .menu li, .menu a, .menu .current_page_item a, .menu .current-menu-item a, .menu{
-    font-size: 20px;
+    font-size: 16px;
     background-color: white;
     color:#222;
     background-image:none;
+  }
+
+  .menu .current_page_item a, .menu .current-menu-item a{
+    font-size:16px;
+  }
+
+  .menu .current-menu-item a{
+    font-size:16px;
   }
 
   .menu-item-has-children::after{
@@ -114,6 +160,16 @@ blue #22408c
   }
   .menu li li {
     background-color: #FBD116;
+  }
+
+  .menu li {
+    border: 0;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 5;
   }
 
   .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
