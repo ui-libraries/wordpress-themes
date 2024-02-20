@@ -38,6 +38,10 @@ blue #22408c
     color: #CE2028;
   }
 
+  .menu{
+    display: table;
+  }
+
   .full-width-no-box .menu .current_page_item a, .full-width-no-box .menu .current-menu-item a {
     background-color: rgba(255, 255, 255, 0);
   }
@@ -123,6 +127,7 @@ blue #22408c
     background-color: white;
     color:#222;
     background-image:none;
+    margin: auto;
   }
 
   .menu .current_page_item a, .menu .current-menu-item a{
@@ -171,6 +176,20 @@ blue #22408c
     position: relative;
     z-index: 5;
   }
+
+  .menu li li a {
+    background: transparent !important;
+    border: none;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
+    text-shadow: none;
+    white-space: nowrap;
+}
 
   .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
     font-size: 2rem;
