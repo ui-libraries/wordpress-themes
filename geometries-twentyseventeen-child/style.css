@@ -18,13 +18,3 @@
   padding-top: .5em;
 }
 
-.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
-  color: rgba(255, 255, 255, 1);
-  /* 
-  font-size: 0.875rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase; 
-  */
-  
-}
