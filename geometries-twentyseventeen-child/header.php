@@ -17,7 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Although the study of artistic geometry has no really well-established institutional home, the recent proliferation of computer-aided design software now allows researchers to explore the field far more readily than our predecessors could.  The internet, moreover, now facilitates the sharing and exchange of ideas on this subject, both within the academy and more broadly.  I fondly hope that this website, in particular, will help to advance this conversation.">
+<meta name="description" content="Although the study of artistic geometry has no really well-established institutional home, the recent proliferation of computer-aided design software now allows researchers to explore the field far more readily than our predecessors could.  The internet, moreover, now facilitates the sharing and exchange of ideas on this subject, both within the academy and more broadly. I fondly hope that this website, in particular, will help to advance this conversation.">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <!--Site Specific - Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E0LYV72W9"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9E0LYV72W9'); </script>
