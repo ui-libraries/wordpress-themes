@@ -1,0 +1,201 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+
+body { margin:0; padding:0; font-family: 'Open Sans', Arial, sans-serif; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+#map_list {width: 300px; position: absolute;top: 0; right: 0; height: 80%; background: white;}
+#map_list ul {padding: 0em;}
+#map_list li {min-height: 59px; height: auto; border-bottom: 1px solid #eee; font-size: 14px; list-style: none; padding: 10px 10px 10px 50px; position: relative; }
+#map_list li:before {content: ''; background: #3cb0fd; height: 14px; width: 14px; position: absolute; left: 20px;  top: 30px;
+-webkit-border-radius: 40px; -moz-border-radius: 40px; border-radius: 40px; opacity: 0.4; filter: alpha(opacity=40); /* For IE8 and earlier */}
+#map_list li.current:before {height: 20px; width: 20px; left: 17.3px; top: 28px; opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */}
+
+.slideButtons {z-index: 200;position: absolute;bottom: 0;right: 0;font-size: 3em;}
+.slideButtons button {background: transparent; color: #3cb0fd;font-size: 40px;font-weight: bold;padding: 5px 15px;text-decoration: none;border: none;outline: none;}
+.slideButtons button:hover {text-decoration: none; color: orange; background: transparent;}
+.selected {}
+
+.marker_title, .modalDialog h2 {margin: 10px 0; font-weight: 300; font-size: 1.5em; font-family: 'Raleway', 'Open Sans', Arial, sans-serif;}
+.marker_long, .marker_lat {display: none;}
+.gm-style-iw {max-width: 200px;}
+
+.mobile-toggle {
+	display: block;
+    z-index: 20001;
+    background: white;
+    position: absolute;
+	width: 100%;
+}
+
+.gm-style-iw
+
+.marker_image img  {display: none;}
+
+
+.modal {
+overflow-x: hidden;
+overflow-y: scroll;
+bottom: 20px;
+top: 20px;
+z-index: 9999px;
+}
+
+.modal-backdrop {top: auto;}
+
+.modal-body img {max-width: 100%;}
+
+.left {float: left; margin: 0 10px 10px 0;}
+
+}
+
+
+a, a:visited {color: #3cb0fd; text-decoration: none; }
+
+/* Mobile
+
+@media only screen and (max-width: 600px){
+.leaflet-bottom {bottom: 40px !important;}
+#map_list {position: absolute;top: auto;right: 0;width: 100%;bottom: 0;overflow: hidden;background: #fff;margin: 0;height: 55px;}
+#map_list ul {padding: 0em; width: 100%; height: 55px; margin: 0em;}
+#map_list li {display: none;}
+#map_list li.selected {display: block;margin: 0 50px;}
+.slideButtons{width: 100%;right: auto;}
+.slideButtons #prev {position: static;float: left;}
+.slideButtons #next {position: static;float: right;}
+
+}
+*/
+
+/* Inline */
+
+html {display: block; }
+body {margin:0; padding:0; position: static;}
+.navbar {position: relative; z-index: 9; background: white;}
+.container {width: 100%;}
+#map {position:absolute; top:50px; bottom:0; width:100%; }
+#map_list {width: 300px; position: absolute; bottom: 0px; left: 10px; background: white; overflow-x: hidden; overflow-y: scroll; top: 130px;}
+#map_list ul {cursor: pointer; padding: 0em;}
+#map_list li {height:  100px; border-bottom: 1px solid #eee; font-size: 14px; list-style: none; padding: 5px 0 5px 40px; position: relative; }
+#map_list li:before {content: ''; background: whitesmoke; height: 14px; width: 14px; position: absolute; left: 10px;  top: 30px;
+-webkit-border-radius: 40px; -moz-border-radius: 40px; border-radius: 40px; opacity: 0.8; filter: alpha(opacity=80); /* For IE8 and earlier */}
+#map_list li.current:before {background: #FEE92C; height: 20px; width: 20px; left: 7.3px; top: 28px; opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */}
+#map_list li .infoWindow .marker_brief {display: none;}
+#map_list li .infoWindow .marker_image img {position: static; width: 80px; float: left; margin: 0px 10px 20px 0px;}
+#map_list .more {display: none;}
+.marker_brief blockquote { margin: 0em 0px; border-left: 0px #fff solid; padding: 0px 0px;}
+.marker_brief,.marker_brief blockquote p {font-size: 15px;}
+.marker_address {color: #aaa; font-style: italic; font-size: 12px;}
+.infoWindow {line-height: 15px;}
+
+
+
+.slideButtons {display: none; width: 300px; z-index: 10; background: white; position: absolute;bottom: 0;right: 10;font-size: 3em;}
+.slideButtons button {background: white; color: #aaa;font-size: 40px;font-weight: bold;padding: 5px 15px;text-decoration: none;border: none;outline: none;}
+.slideButtons button:hover {text-decoration: none; color: #565A5C; background: transparent;}
+.selected {}
+
+.marker_title {max-height: 60px; overflow: hidden; max-width: 220px;}
+.marker_title a, .marker_title a:visited {color: #565A5C;}
+.marker_title, .modalDialog h2 {margin: 5px 0; font-weight: 300; font-size: 14px; font-family: 'Raleway', 'Open Sans', Arial, sans-serif;}
+.marker_long, .marker_lat, .marker_id {display: none;}
+.marker_brief {margin: 10px 0 20px 0;}
+.marker_image img {width: 100%; height: auto;}
+.gm-style-iw .marker_image img  {width: auto; height: 150px;}
+.gm-style-iw {max-width: 350px;}
+
+a, a:visited {color: #424949; }
+.marker_brief a {color: white; text-decoration: none; padding: 10px; background: #424949; }
+
+.page-node-23354 .splash-logo {
+  display: none;
+}
+
+#lightbox2-overlay {z-index: -100 !important;}
+#imageDataContainer, #outerImageContainer {float: right; margin: 0 !important; max-width: 500px; background: transparent !important; }
+#lightbox {right: 0px; left: auto !important; float: right; height: 87%; max-width: 500px;}
+
+#frameContainer {
+width: 500px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  top: 30px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#frameContainer iframe {
+  height: 100%;
+}
+
+
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 700px){
+
+.marker_image img {height: 100px; width: auto; float: left; margin: 0 5px 5px 0;}
+#map_list li.selected .infoWindow {height: 55px;}
+#map_list li.selected .infoWindow .marker_image {width: auto; margin: 0px;}
+#map_list li.selected .infoWindow .marker_image img {height: 100px; width: 80px; float: left; margin: 0 10px 0px 0;}
+.marker_title {padding-top: 10px; font-size: 1em; overflow: hidden; width: 200px;}
+.marker_title a,.marker_title a:visited {color: #565A5C; }
+
+.modalDialog > div {width: 100%; margin: 1px;}
+.leaflet-bottom {bottom: 40px !important;}
+#map_list_container {width: 100%}
+#map_list {position: absolute;
+top: 60%;
+width: 100%;
+bottom: 0;
+overflow: hidden;
+background: white;
+margin: 0 10%;
+height: 40%;
+z-index: 1000;
+  left: 0px;
+  margin: 0px;
+}
+#map_list ul { margin: 0em; width: 100%; height: 100%; padding: 0em; overflow: scroll;}
+
+#map_list li {visibility: visible; display: block; height: 120px; }
+#map_list li.selected {visibility: visible; display: block; margin: 0px;}
+
+.modalDialog {visibility: visible;}
+
+.slideButtons{z-index: 20000; display: none; border-top: 1px solid #aaa; height: 55px; background: rbga(255, 255, 255, 0.8); width: 100%;right: auto;}
+.slideButtons button{ background: transparent; font-size: 20px; height: 55px;}
+.slideButtons #prev {position: static;float: left;}
+.slideButtons #next {position: static;float: right;}
+.gm-style-iw .marker_image img  {display: none;}
+.marker_image{float: left;}
+.marker_title {max-height: 100% !important; overflow: hidden; padding-top: 10px; margin: 0px; font-size: 1em; width: 200px; color: black; font-weight: 700px;}
+.infoWindow .marker_title {width: auto;}
+
+
+
+   #bottomNavClose {
+   left: 4px !important;
+   border-radius: 40px;
+   border: 2px #000 solid;
+   padding: .8em;
+   }
+
+
+#imageDataContainer, #outerImageContainer {
+	width: 100%	!important;}
+
+#outerImageContainer{height: 80%;}
+
+#lightbox {right: 2px; left: 2px; float: left; height: 87%; max-width: 500px;
+    z-index: 99999 !important;
+}
+
+}
