@@ -1,0 +1,664 @@
+/*
+Theme Name:   Health Story Hub
+Description:  Twenty Twenty Child for Health Story Hub
+Author:       UI Libraries
+Template:     twentytwenty
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  healthstoryhub
+*/
+
+
+
+/*attempted to get the logo to center on small screens
+
+@media screen 
+	{and (max-width: 600px) 
+
+
+	.site-logo img {
+		max-height: 500px;
+		margin-inline-start:auto;
+		margin-left: 0;
+		margin-right:0;
+		display:block;
+		text-align:center;
+	}
+	.site-logo img a {
+		max-height: 500px;
+		margin-inline-start: auto;
+		margin-left: auto;
+		margin-right:auto;
+		display:block;
+		text-align:center;
+	}
+
+	.custom-logo {
+		max-height: 500px;
+		margin-inline-start: auto;
+		display:block;
+		text-align:center;
+	}
+	.custom-logo-link {
+		max-height: 500px;
+		margin-inline-start: auto;
+		display:block;
+		text-align:center;
+	}
+	}
+*/
+
+
+
+.menu-bottom .social-menu, .powered-by-wordpress, .blog .entry-categories-inner, .blog .post-author, #post-306 .type-icon{
+	display: none;
+}
+
+.post-tags{
+	color: black;
+	display: block;
+}
+
+.searchandfilter h4{
+	font-size: medium!important;
+}
+
+.desktop-nav-toggle{
+	display: none!important;
+}
+/*hide title on home page*/ 
+.page-id-54 .entry-title{
+	display:none;	
+}
+
+.header-inner{
+	display: block;
+}
+.header-titles-wrapper{
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+ul.primary-menu{
+	justify-content: center;
+}
+
+body, p {
+	font-family: "Lato", sans-serif;
+	/*font-size: inherit;	*/
+	font-size: max(12pt, inherit);
+}
+
+pre.wp-block-verse, .entry-content {
+	font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Arvo", serif;
+	font-weight:400;
+}
+
+p a {
+	color: #880000;
+}
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content cite, .entry-content figcaption, .entry-content table, .entry-content address, .entry-content .wp-caption-text, .entry-content .wp-block-file {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"], .bg-accent, .bg-accent-hover:hover, .bg-accent-hover:focus, :root .has-accent-background-color, .comment-reply-link .modal-menu li a {
+	color:#880000;
+}
+
+
+.color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus)::first-letter, .wp-block-button.is-style-outline {
+	color:#880000 !important;
+}
+
+button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"], .bg-accent, .bg-accent-hover:hover, .bg-accent-hover:focus, :root .has-accent-background-color, .comment-reply-link {
+	background-color: #880000;
+}
+
+
+/* override red bg on search and hamburger menu "buttons"*/
+#site-header button, .mce-tinymce button {
+	background-color:transparent !important;
+}
+
+/* make the little quote icon on homepage red */
+.wp-block-pullquote:before, .archive-header a, .header-footer-group .color-accent, .color-accent-hover:hover {
+	color: #880000 !important;
+}
+
+/* Search form styles */
+form.searchandfilter {
+	font-size:10pt;
+}
+
+form.searchandfilter ul {
+	margin-left:0;
+	position:relative;
+	padding:0 0 35px 0;
+}
+
+.searchandfilter ul {
+	border: dotted black 6px;
+}
+
+.searchandfilter ul > li {
+	padding:0 6px !important;
+}
+
+.searchandfilter ul > li > ul:not(.children) {
+	border:none;
+}
+
+.searchandfilter h4 {
+	font-size: x-large;
+	font-weight: 600;
+	text-decoration:underline;
+}
+
+/* Search results/index */
+
+.post-row h2.post-title a {
+	color:#880000;
+	font-size:.8em;
+}
+
+.post-row .post-icon {
+	width:150px;
+	float:left;
+	margin-right:1em;
+}
+
+.results-stories .post-icon, .teaching-materials-results .post-icon {
+		display:none;
+}
+
+.post-row .post-info {
+	float:left;
+}
+
+.post-row .excerpt-container {
+	height:250px;
+	position:relative;
+}
+
+.post-row .excerpt {
+	height:200px;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+}
+
+.post-row .readmore {
+	background-image: linear-gradient(180deg, rgba(255,0,0,0), rgba(255,255,255,1));
+	padding-top:120px;
+	width:100%;
+	height:120px;
+		position:absolute;
+	bottom:0;
+	text-align:right;
+
+}
+
+.pagination a, .pagination-single-inner a {
+	color: #880000;
+}
+
+.submissions .pagination-single {
+	display:none;
+}
+
+/*.heading-inner {
+	padding:0px; 
+}
+
+.post-inner {
+	padding-top: 0}
+
+.header-titles-wrapper {
+
+}
+*/
+
+
+
+.primary-menu > li > a {
+	color:#ffffff !important;
+	font-size: 1.3em;
+}
+
+
+/****** Accent color overrides */
+
+button, .button, .faux-button, .wp-block-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"], .bg-accent, .bg-accent-hover:hover, .bg-accent-hover:focus, :root .has-accent-background-color, .comment-reply-link {
+	background-color: #880000 !important;
+}
+
+	body:not(.overlay-header) .primary-menu > li {
+	color:#ffffff !important;
+	background-color: #880000;
+	padding: 0.5em;
+}
+
+
+
+/*not loving this as much as I thought
+	
+body:not(.overlay-header) .primary-menu > li {
+	font-family: "Arvo";
+}
+*/
+
+#six-tiles figcaption {
+	background-color: #880000 !important;
+}
+
+.figcaption {
+	font-family: "Lato";
+}
+
+/*this appears to call a circular photo with text at the bottom */
+/*
+.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) figcaption {
+	background-color: #88000 !important;
+	padding-top: 1em;
+	color: white !important;
+}
+
+/*pads top of circular image in gallery */
+
+
+
+
+/*.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) a, .wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img {
+	margin-top:1em;
+}
+
+.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image)
+{	padding:.5em;
+}
+
+.entry-content .has-normal-font-size, .entry-content .has-regular-font-size {
+	font-size:1em;
+}
+.wp-block-verse has-text-align-center has-normal-font-size {
+	font-size:1.2em;
+}
+
+/*this calls a square photo with text at the bottom */
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+	background-color: #880000 !important;
+	background:fixed;
+	font-size:large; 
+	padding-top: 4.4px;
+}
+
+.wp-block-image size-large is-style-rounded, tile-text is-style-rounded {
+	background-color: #880000 !important;
+	color: #880000 !important;
+}
+
+a.wp-block-button_link {	color: #880000 !important;
+	background-color: #880000 !important;
+}
+
+
+
+footer-widgets column-two grid-item {
+	margin:auto;
+}
+
+.footer-widgets {
+	margin:auto;
+}
+
+/*moves search and filter submit button to the right*/
+.sf-field-submit {
+	float:right;
+	position: absolute;
+	bottom: 7px;
+	right:0%;
+}
+
+
+.footer-widgets-wrapper {margin:auto;}
+
+.footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer, .footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer{
+	margin-top: 0px;
+}
+
+.footer-widgets-outer-wrapper {
+	padding:0rem;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption a {
+	background: #800 !important;
+	color: #f5efe0 !important; 
+	padding-top:2px;
+	font-size: 1em;
+}
+
+h1, .heading-size-1 {
+  font-size: 5.4rem;
+}
+
+.entry-content .tile-text figcaption a {
+	font-size: 1.2em !important;
+	font-family: "Arvo", sans-serif;
+	font-weight: bold;
+	color: #f5efe0 !important;
+	background: color #800 !important;
+}
+
+.section-inner {
+	width:100%;
+	display:inline;
+	margin: auto;
+	padding: 10px;
+}
+
+.section-inner.studio-logo{
+	/*display: block!important;*/
+	margin-bottom: 75px;
+}
+
+
+
+#studio-logo-img{
+	width: 400px;
+	float: right;
+}
+
+.site-logo img {
+	max-height: 12rem;
+	transition:0.15s;
+}
+	
+
+
+@media (min-width: 700px)
+
+{.powered-by-wordpress 
+	{display: none;}
+}
+
+.wp-block-pullquote blockquote p{
+	font-size: 1.3em;
+	
+}
+
+.wp-block-cover p:not(.has-text-color) {
+	color: #000;
+  }
+
+img.custom-logo {
+	width: 12rem;
+	height: 10em; 
+}
+
+.breadcrumbs ul li {
+	font-size: 16px;
+	/*color: #DFA91E;*/
+	background-color: white;
+	padding: 20px;
+  }
+
+
+  .submissionlistpage-single-item {
+	display: grid;
+}
+
+.hubsubmissions-page-single {
+	justify-self: center;
+	width: 80%;
+	height: auto;
+}
+
+.has-large-font-size {
+	font-size:large!important;
+}
+
+.singular .entry-header {
+	padding: 0px;
+}
+
+.wp-block-columns:where(.has-background) {
+	padding:0%;
+}
+
+.post_content {
+	padding: 20px;
+}
+@media (min-width: 769px) {
+	.hubsubmissions-page-single {
+		grid-template-columns: 20% 80%;
+	 }
+	.dcm-book-feature-image {
+		padding-top: 20px;
+	}
+}
+
+.searchandfilter > ul > li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px;
+	background-color: transparent;
+
+}  
+
+.searchandfilter {
+	background-color: transparent;
+}
+
+
+.searchandfilter .sf-input-select {
+	font-size: large;
+}
+
+.searchandfilter .sf-label-checkbox {
+	font-size: larger;
+}
+
+.searchandfilter .sf-field-submit .sf-field-reset {
+	display:inline-block;
+	vertical-align: top;
+	padding: 0px 15px;
+	
+}
+
+.searchandfilter .sf-field-tag {
+	margin-bottom:5rem;	
+}
+
+
+
+/*.custom-logo {
+	width: 25em;
+	height: 25em;
+}*/
+
+
+
+
+.social-menu footer {
+	display:none;
+}
+
+
+
+.wp-block-cover_inner-container {
+	width: 100%
+}
+
+/*
+	Archive Display Tweaks
+*/
+
+.archive .entry-content .post-row {
+	max-width:1000px !important;
+}
+
+.archive h2.entry-title {
+	font-size:2em;
+}
+
+.archive .post-inner{
+	padding-top:2em;
+} 
+
+.archive h2.entry-title {
+	display: none;
+}
+
+h1, .heading-size-1 {
+	font-size: 4.4rem;
+}
+
+.archive .featured-media {
+	display:none;
+}
+
+/**/
+
+.header-toggles .toggle {
+	padding:0 8rem 0 11rem;
+	margin-inline-start: -141px;
+}
+
+.toggle-inner {
+	padding:0 3rem 0 0;
+}
+
+.post-date{
+	display: none!important;
+}
+
+body:not(.singular) main > article:first-of-type {
+	padding:0;
+}
+
+.archive .post-inner-thin {
+	padding-top: 0px;
+}
+
+.archive .post-inner {
+	padding-top:0px;
+}
+
+.archive .has-text-align-center {
+	border:0px;
+	padding:0px;
+	margin-bottom: 0px;
+	margin-top:0px;
+}
+
+/*for featured images on individual search listing page*/
+.submissions-template-default img {
+	max-width:35em;
+}
+
+
+div.footer-top.has-footer-menu.has-social-menu {
+	display: none;
+}
+
+@media only screen and (max-width: 380px) {
+}
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+}
+
+@media only screen and (min-width: 701px)
+and (max-width: 819px) {
+
+}
+@media only screen and (min-width: 982px)
+and (max-width: 1144px) {
+	ul.primary-menu{
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (min-width: 1144px)
+and (max-width: 1455px) {
+	ul.primary-menu{
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (min-width: 1456px)
+and (max-width: 1615px) {
+	ul.primary-menu{
+		font-size: 1.6rem;
+	}
+}
+
+@media only screen and (min-width: 2400px)
+and (max-width: 5000px) {
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media all and (-ms-high-contrast: none),
+       (-ms-high-contrast: active) {
+    /*IE10+ CSS styles go here*/
+
+}  
+
+table, td {border:none}
+
+
+/*Making homepage tile hover effect*/
+.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img {
+}
+
+/* make the little quote icon on homepage red, in dark mode */   
+
+/* my failed attempt at fixing dark mode, starting with changing link color 
+@media screen and (prefers-color-scheme: dark) {
+.wp-block-pullquote:before, .archive-header a, .header-footer-group .color-accent, .color-accent-hover:hover {
+	{color: #000000 !important;}
+}
+}*/
+
+
+/*attempted coding from https://www.youtube.com/watch?v=UpRjVAc7xRo, to make hover effect on home page tiles. */
+/*
+figure.hover-img-display {
+	position: relative;
+	overflow: hidden;
+}
+
+figure.hover-img-display > figcaption {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	height: 50%;
+	line-height:50%;
+	bottom: 50%;
+	text-align: center;
+	background:rgba(256,256,256,.8); 
+	color:#000;
+	transition:bottom 500ms; 
+}
+
+figure.hover-img-display:hover > figcaption {
+	bottom:40%; 
+	transition: bottom 500ms;
+}
+
+/*the "bottom" needs to be negative, as twice as big as the height and the line height*/
