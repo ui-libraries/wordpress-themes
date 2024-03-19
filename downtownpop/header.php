@@ -12,11 +12,8 @@
   <!-- Mobile -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes">
-<<<<<<< HEAD
   <meta name="viewport" content="width=device-width; initial-scale=1; minimal-ui" />
-=======
-  <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1; minimal-ui" />
->>>>>>> a4ab09622f0ad2a1c532c1008206e765c1921845
+  <meta name="description" content="Check out the people, places, and events discussed in The Downtown Pop Underground, which examines the various arts scenes that thrived in downtown New York City from 1958 to 1976.">
   <meta name="mobile-web-app-capable" content="yes">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
