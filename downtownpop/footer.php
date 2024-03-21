@@ -28,7 +28,9 @@
 	function goBack() {
     window.history.back();
 }
+
 </script>
+
 <?php wp_footer(); ?>
 
 </body>

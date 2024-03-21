@@ -5,13 +5,15 @@
 @import url(fonts/icomoon/fonts/icomoon.ttf);
 @import url(fonts/icomoon/fonts/icomoon.woof);*/
 
+[aria-current]{
+    border-bottom:2px solid black;
+}
+
 @media only screen and (max-width: 1530px) and (min-width: 1200px)  {
 .search-collection .field-content {font-size: 14px;}
 .search-collection hr {display: none;}
 .search-collection .btn-outline {display: none;}
 }
-
-
 
 /******* Middle ground (before break) ****/
 @media (max-width: 1100px) {
@@ -255,7 +257,7 @@ width: auto;
 line-height: 80px;
 }
 
-.navbar .menu a:hover, .navbar .menu a:active {
+.navbar .menu a:hover, .navbar .menu a:active{
 	border-bottom:2px solid black;
 }
 
