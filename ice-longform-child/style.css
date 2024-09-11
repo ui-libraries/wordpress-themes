@@ -1,0 +1,28 @@
+/*
+ Theme Name:   Ice in the Heartland
+ Description:  Longform child theme
+ Author:       The Studio
+ Template:     longform
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  longform-child
+*/
+
+#icon-image{
+    width:25px;
+    float: left;
+    margin-right: 10px;
+}
+
+.copyright, .header-search, .footer-menu, #post-6 .entry-header, .element-invisible{
+    display: none;
+}
+
+#primary-navigation{
+    float: right;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+    font-family: 'Montserrat', sans-serif;
+}
+
