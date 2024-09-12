@@ -1,0 +1,206 @@
+/*
+ Theme Name:   ILHOP Eminent Child
+ Description:  Eminent Child Theme for the "Iowa Labor History Oral Project" project
+ Author:       Ethan DeGross
+ Template:     eminent
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  ilhop-eminent-child
+*/
+
+
+/*
+yellow:#F9A61A
+red: #711B12
+*/
+
+header{
+    background-color: white;
+}
+
+a{
+    word-break: break-all;
+}
+
+.footer-main{ 
+    background-color: white;
+}
+/*
+body.page-id-9  {
+    background-image: url(https://dsps.lib.uiowa.edu/ilhop/wp-content/uploads/sites/75/2021/05/working-woman-compressed.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 140px;
+    background-color: black;
+}
+*/
+body{
+    background-color: white;
+}
+
+.copyright-text, .site-title, .post-date, .page-id-9 .page-title, .post-meta, .blog-title{
+    display: none;
+}
+
+.logo-section img{
+    float: left;
+    clear: both;
+}
+
+.site-description, body, p, .post-detail p{
+    color: black;
+}
+
+.site-description{
+    width: 100%;
+}
+
+.post-detail{
+    border-style: none;
+}
+
+.our-blog-content .blog-box{
+    background-color: white;
+}   
+
+#red-line-header{
+    width: 100%;
+    height: 100px;
+    background-color: #711B12;
+    position: absolute; 
+    z-index: -1000;
+    top: 30px;
+}
+
+div.bottom-header.col-md-12{
+    padding-left:0px;
+}
+
+.menu-button{
+    display: block;
+    top: 50px;
+}
+
+.menu-button span{
+    background-color: #F9A61A;
+    opacity: .75;
+}
+.overlay-nav-active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 99999;
+    overflow-y: auto;
+}
+
+.header-navigation {
+    display: none;
+    opacity: 0;
+    transition: opacity .4s linear;
+    -webkit-transition: opacity .4s linear;
+}
+
+.nav-mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    text-align: center;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+.nav-mobile ul {
+    margin: 0;
+    padding: 0;
+}
+.nav-mobile ul li {
+    float: none;
+    margin-bottom: 12px;
+    margin-left: 0
+}
+.nav-mobile ul li a {
+    font-size: 26px;
+}
+
+.nav-mobile{
+    opacity: .98;
+    background-color:white;
+}
+
+.site-description{
+    word-break: normal;
+}
+
+
+@media only screen and (max-width: 380px) {
+    body.page-id-9{
+        background-position: left 50% top 25%!important;
+    }
+
+    #red-line-header{
+        width: 100%;
+        height: 50px;
+        background-color: #711B12;
+        position: absolute; 
+        z-index: -1000;
+        top: 30px;
+    }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+    #red-line-header{
+        width: 100%;
+        height: 50px;
+        background-color: #711B12;
+        position: absolute; 
+        z-index: -1000;
+        top: 30px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+}
+
+@media only screen and (min-width: 701px)
+and (max-width: 819px) {
+
+}
+@media only screen and (min-width: 820px)
+and (max-width: 980px) {
+
+}
+
+@media only screen and (min-width: 981px)
+and (max-width: 1349px) {
+
+}
+
+@media only screen and (min-width: 1350px)
+and (max-width: 2399px) {
+
+}
+
+@media only screen and (min-width: 2400px)
+and (max-width: 5000px) {
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media all and (-ms-high-contrast: none),
+       (-ms-high-contrast: active) {
+    /*IE10+ CSS styles go here*/
+
+}  
